@@ -508,8 +508,13 @@ var/global/floorIsLava = 0
 	if(!check_rights(0))	return
 
 	var/message = input("Global message to send:", "Admin Announce", null, null) as message
-	message = sanitize(message, 500, extra = 0)
+	var/max_length = 1000
 	if(message)
+		if(length(message) >= max_length)
+			var/overflow = ((length(message)+1) - max_length)
+			to_chat(usr, SPAN_WARNING("Your message is too long by [overflow] character\s."))
+			return
+		message = copytext_char(message,1,max_length)
 		message = replacetext(message, "\n", "<br>") // required since we're putting it in a <p> tag
 		to_world("<span class=notice><b>[usr.key] Announces:</b><p style='text-indent: 50px'>[message]</p></span>")
 		log_admin("Announce: [key_name(usr)] : [message]")
