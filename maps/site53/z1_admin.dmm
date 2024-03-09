@@ -224,10 +224,6 @@
 "bx" = (
 /turf/simulated/wall/r_wall,
 /area/site53/tram/mtf)
-"by" = (
-/obj/structure/bed/chair/comfy/black,
-/turf/simulated/wall/titanium,
-/area/centcom/goc)
 "bB" = (
 /obj/structure/window/reinforced,
 /obj/structure/bed/chair/shuttle/black{
@@ -20539,7 +20535,7 @@ Um
 Xx
 Um
 Um
-by
+lI
 lI
 kK
 NM
