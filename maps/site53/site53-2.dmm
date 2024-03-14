@@ -500,9 +500,11 @@
 /turf/simulated/wall/prepainted,
 /area/site53/lowertrams/redline)
 "aby" = (
-/obj/effect/floor_decal/corner/orange/border,
-/turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearcherb)
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/white,
+/area/site53/reswing/xenobiology)
 "abz" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor{
@@ -858,17 +860,21 @@
 /turf/simulated/floor/wood/walnut,
 /area/site53/lowertrams/restaurantkitchenarea)
 "acX" = (
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
+	},
 /obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+	d2 = 4;
+	icon_state = "0-4"
 	},
-/obj/machinery/door/airlock/glass/research{
-	name = "Xenobiology Laboratory";
-	req_access = list("ACCESS_SCIENCE_LEVEL3")
+/obj/effect/floor_decal/corner/orange/border{
+	dir = 9
 	},
-/turf/simulated/floor/tiled,
-/area/site53/reswing/xenobiology)
+/obj/structure/table/standard,
+/turf/simulated/floor/tiled/monotile/white,
+/area/site53/science/seniorresearchera)
 "acY" = (
 /obj/machinery/botany/editor,
 /turf/simulated/floor/tiled/techfloor,
@@ -2192,11 +2198,17 @@
 /turf/simulated/floor/tiled,
 /area/site53/lowertrams/hub)
 "ahs" = (
-/obj/effect/floor_decal/corner/orange/border{
-	dir = 6
+/obj/machinery/photocopier{
+	pixel_y = 3
 	},
-/turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearcherb)
+/obj/structure/table/reinforced,
+/obj/machinery/camera/autoname{
+	name = "SCP-049 Observation 2";
+	network = list("Heavy                Containment                Zone                Network");
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/site53/ulcz/humanoidcontainment)
 "aht" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -2473,12 +2485,12 @@
 /turf/simulated/wall/prepainted,
 /area/site53/ulcz/scp078)
 "aib" = (
-/obj/structure/closet/l3closet/scientist/multi,
-/obj/machinery/light{
-	dir = 4
+/obj/effect/floor_decal/corner/orange/border{
+	dir = 5
 	},
-/turf/simulated/floor/tiled/monotile,
-/area/site53/reswing/xenobiology)
+/obj/structure/flora/pottedplant/minitree,
+/turf/simulated/floor/tiled/monotile/white,
+/area/site53/science/seniorresearchera)
 "aid" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -3934,9 +3946,7 @@
 /obj/effect/floor_decal/corner/yellow/half{
 	dir = 8
 	},
-/obj/structure/closet/secure_closet/engineering_personal{
-	req_access = list("ACCESS_ENGINEERING_LEVEL2")
-	},
+/obj/structure/closet/secure_closet/engineering_personal,
 /obj/item/device/flashlight{
 	pixel_y = 15
 	},
@@ -4175,9 +4185,7 @@
 /obj/effect/floor_decal/corner/yellow/half{
 	dir = 4
 	},
-/obj/structure/closet/secure_closet/engineering_personal{
-	req_access = list("ACCESS_ENGINEERING_LEVEL2")
-	},
+/obj/structure/closet/secure_closet/engineering_personal,
 /obj/item/device/flashlight{
 	pixel_y = 15
 	},
@@ -4651,9 +4659,7 @@
 /obj/effect/floor_decal/corner/yellow/half{
 	dir = 4
 	},
-/obj/structure/closet/secure_closet/engineering_personal{
-	req_access = list("ACCESS_ENGINEERING_LEVEL2")
-	},
+/obj/structure/closet/secure_closet/engineering_personal,
 /obj/item/device/flashlight{
 	pixel_y = 15
 	},
@@ -5029,9 +5035,7 @@
 /turf/simulated/floor/tiled/white,
 /area/site53/reswing/xenobiology)
 "aoR" = (
-/obj/structure/closet/secure_closet/engineering_personal{
-	req_access = list("ACCESS_ENGINEERING_LEVEL2")
-	},
+/obj/structure/closet/secure_closet/engineering_personal,
 /obj/effect/floor_decal/corner/yellow/mono,
 /obj/item/device/flashlight{
 	pixel_y = 15
@@ -5687,9 +5691,12 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/engineering/primaryhallway)
 "aqA" = (
-/obj/effect/paint_stripe/mauve,
-/turf/simulated/wall/prepainted,
-/area/site53/science/seniorresearcherb)
+/obj/effect/floor_decal/corner/orange/border,
+/obj/structure/bed/chair/office/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/monotile/white,
+/area/site53/science/seniorresearchera)
 "aqB" = (
 /turf/simulated/floor/tiled/dark/monotile,
 /area/vacant/prototype/control)
@@ -10144,9 +10151,16 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/uhcz/scp895)
 "aCl" = (
-/obj/effect/wallframe_spawn/reinforced,
-/turf/simulated/floor,
-/area/site53/science/seniorresearcherb)
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/effect/floor_decal/corner/orange/border{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/monotile/white,
+/area/site53/science/seniorresearchera)
 "aCm" = (
 /obj/structure/lattice,
 /obj/structure/cable/green{
@@ -11282,17 +11296,14 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/uhcz/securitypost)
 "aFs" = (
-/obj/machinery/light/small{
+/obj/effect/floor_decal/corner/orange/border{
+	dir = 6
+	},
+/obj/item/modular_computer/console/preset/aislot/research{
 	dir = 1
 	},
-/obj/effect/catwalk_plated/dark,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor,
-/area/site53/uhcz/hallways)
+/turf/simulated/floor/tiled/monotile/white,
+/area/site53/science/seniorresearchera)
 "aFw" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -11391,8 +11402,16 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/uhcz/securitypost)
 "aFT" = (
-/turf/unsimulated/mineral,
-/area/site53/uhcz/hallways)
+/obj/machinery/power/apc{
+	name = "south bump";
+	pixel_y = -24
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/site53/ulcz/humanoidcontainment)
 "aFU" = (
 /obj/effect/floor_decal/corner/red/border{
 	dir = 8
@@ -12121,13 +12140,11 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/uhcz/scp106observ)
 "aIF" = (
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
+/obj/effect/floor_decal/corner/orange/border{
+	dir = 5
 	},
-/turf/simulated/floor/tiled/white,
-/area/site53/reswing/xenobiology)
+/turf/simulated/floor/tiled/monotile/white,
+/area/site53/science/seniorresearchera)
 "aII" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -12258,12 +12275,11 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/reswing/robotics)
 "aJe" = (
-/obj/effect/floor_decal/industrial/hatch/red,
-/obj/effect/floor_decal/industrial/warning{
+/obj/effect/floor_decal/corner/orange/bordercorner{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/monotile,
-/area/site53/reswing/xenobiology)
+/turf/simulated/floor/tiled/monotile/white,
+/area/site53/science/seniorresearchera)
 "aJf" = (
 /obj/structure/closet/crate/bin{
 	anchored = 1;
@@ -12272,24 +12288,22 @@
 /turf/simulated/floor/tiled/monotile/white,
 /area/site53/ulcz/scp151)
 "aJg" = (
-/obj/machinery/light{
+/obj/item/modular_computer/console/preset/aislot/research{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/orange/border{
 	dir = 4
 	},
-/obj/effect/floor_decal/industrial/hatch/red,
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/site53/reswing/xenobiology)
+/turf/simulated/floor/tiled/monotile/white,
+/area/site53/science/seniorresearchera)
 "aJh" = (
-/obj/machinery/power/apc{
-	dir = 8;
-	name = "west bump";
-	pixel_x = -24
+/obj/machinery/button/blast_door{
+	id_tag = "Humanoid Containment South";
+	name = "Humanoid Containment South";
+	pixel_y = 24
 	},
-/obj/structure/cable/green,
-/turf/simulated/floor/tiled/white,
-/area/site53/reswing/xenobiology)
+/turf/simulated/floor/tiled/steel_grid,
+/area/site53/ulcz/humanoidcontainment)
 "aJi" = (
 /obj/machinery/door/window/brigdoor/westleft,
 /obj/effect/floor_decal/industrial/warning/fulltile,
@@ -12319,11 +12333,12 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/reswing/robotics)
 "aJp" = (
-/obj/machinery/computer/rdconsole/core{
-	req_access = list()
+/obj/effect/floor_decal/corner/orange/border{
+	dir = 4
 	},
-/turf/simulated/floor/tiled/monotile,
-/area/site53/reswing/robotics)
+/obj/structure/filingcabinet/filingcabinet,
+/turf/simulated/floor/tiled/monotile/white,
+/area/site53/science/seniorresearchera)
 "aJq" = (
 /obj/structure/table/standard,
 /obj/item/stack/material/phoron,
@@ -16365,8 +16380,7 @@
 /area/site53/llcz/entrance_checkpoint)
 "aXL" = (
 /obj/effect/floor_decal/corner/blue/border{
-	dir = 4;
-	icon_state = "bordercolor"
+	dir = 4
 	},
 /obj/structure/cable/green{
 	d1 = 2;
@@ -19601,13 +19615,11 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/llcz/entrance_checkpoint)
 "biF" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/effect/floor_decal/corner/orange/border{
+	dir = 8
 	},
-/turf/simulated/floor/tiled/monotile,
-/area/site53/reswing/xenobiology)
+/turf/simulated/floor/tiled/monotile/white,
+/area/site53/science/seniorresearchera)
 "biG" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable{
@@ -20576,12 +20588,11 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/site53/ulcz/humanoidcontainment)
 "bHX" = (
-/obj/machinery/papershredder,
-/obj/effect/floor_decal/corner/orange/border{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearchera)
+/obj/structure/disposalpipe/trunk,
+/obj/machinery/disposal,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/white,
+/area/site53/reswing/xenobiology)
 "bIm" = (
 /obj/effect/paint_stripe/red,
 /turf/simulated/wall/titanium,
@@ -20721,11 +20732,14 @@
 /turf/simulated/floor/reinforced,
 /area/site53/uhcz/generalpurpose3)
 "bTl" = (
-/obj/structure/disposalpipe/trunk,
-/obj/machinery/disposal,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/monotile/white,
-/area/site53/reswing/xenobiology)
+/obj/machinery/button/blast_door{
+	id_tag = "Humanoid Lockdown";
+	name = "Humanoid Lockdown";
+	req_access = list(list("ACCESS_SECURITY_LEVEL3","ACCESS_SCIENCE_LEVEL3"));
+	pixel_y = 25
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/site53/uhcz/hallways)
 "bTo" = (
 /obj/structure/railing/mapped{
 	dir = 1
@@ -21720,15 +21734,13 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/site53/uhcz/hallways)
 "cWo" = (
-/obj/effect/catwalk_plated/dark,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/effect/floor_decal/corner/orange/border{
+	dir = 6
 	},
-/obj/machinery/light/small,
-/turf/simulated/floor,
-/area/site53/uhcz/hallways)
+/obj/structure/table/standard,
+/obj/structure/flora/pottedplant/minitree,
+/turf/simulated/floor/tiled/monotile/white,
+/area/site53/science/seniorresearchera)
 "cXy" = (
 /obj/structure/sign/scp/euclid_scp{
 	pixel_x = -32
@@ -22235,17 +22247,35 @@
 /turf/simulated/floor/tiled,
 /area/site53/lowertrams/escape)
 "dCF" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/structure/table/reinforced,
+/obj/item/clothing/shoes/orange,
+/obj/item/clothing/shoes/orange,
+/obj/item/clothing/shoes/orange,
+/obj/item/clothing/shoes/orange,
+/obj/item/clothing/shoes/orange,
+/obj/item/clothing/shoes/orange,
+/obj/item/clothing/shoes/orange,
+/obj/item/clothing/shoes/orange,
+/obj/item/clothing/shoes/orange,
+/obj/item/clothing/shoes/orange,
+/obj/item/clothing/under/scp/dclass,
+/obj/item/clothing/under/scp/dclass,
+/obj/item/clothing/under/scp/dclass,
+/obj/item/clothing/under/scp/dclass,
+/obj/item/clothing/under/scp/dclass,
+/obj/item/clothing/under/scp/dclass,
+/obj/item/clothing/under/scp/dclass,
+/obj/item/clothing/under/scp/dclass,
+/obj/item/clothing/under/scp/dclass,
+/obj/machinery/light{
+	dir = 4
 	},
-/obj/machinery/door/airlock/glass/research{
-	name = "Senior Researcher Office B";
-	req_access = list("ACCESS_SCIENCE_LEVEL4")
+/obj/machinery/camera/autoname{
+	name = "SCP-049 Observation 2";
+	network = list("Heavy Containment Zone Network")
 	},
-/turf/simulated/floor/tiled/monotile,
-/area/site53/science/seniorresearcherb)
+/turf/simulated/floor/tiled/steel_grid,
+/area/site53/ulcz/humanoidcontainment)
 "dDd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -22786,9 +22816,7 @@
 	network = list("Engineering                Network")
 	},
 /obj/effect/floor_decal/corner/yellow/mono,
-/obj/structure/closet/secure_closet/engineering_personal{
-	req_access = list("ACCESS_ENGINEERING_LEVEL2")
-	},
+/obj/structure/closet/secure_closet/engineering_personal,
 /obj/item/device/flashlight{
 	pixel_y = 15
 	},
@@ -22809,19 +22837,11 @@
 /turf/simulated/floor/wood/walnut,
 /area/site53/lowertrams/restaurantkitchenarea)
 "eoN" = (
-/obj/effect/catwalk_plated/dark,
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor,
-/area/site53/uhcz/hallways)
+/obj/machinery/light/spot,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/l3closet/scientist,
+/turf/simulated/floor/tiled/white,
+/area/site53/reswing/xenobiology)
 "epk" = (
 /obj/structure/table/reinforced,
 /obj/item/device/radio,
@@ -23342,15 +23362,9 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/site53/ulcz/humanoidcontainment)
 "eWL" = (
-/obj/structure/table/standard,
-/obj/machinery/photocopier{
-	pixel_y = 3
-	},
-/obj/effect/floor_decal/corner/orange/border{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearcherb)
+/obj/structure/closet,
+/turf/simulated/floor/tiled/steel_grid,
+/area/site53/uhcz/hallways)
 "eXf" = (
 /obj/structure/bed/chair/comfy/black,
 /turf/simulated/floor/tiled/techmaint,
@@ -23565,14 +23579,12 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/uhcz/securitypost)
 "fiJ" = (
-/obj/item/modular_computer/console/preset/cardslot/command{
-	dir = 4
-	},
 /obj/effect/floor_decal/corner/orange/border{
-	dir = 10
+	dir = 1
 	},
+/obj/structure/bookcase/manuals/research_and_development,
 /turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearcherb)
+/area/site53/science/seniorresearchera)
 "fjn" = (
 /obj/effect/floor_decal/corner/red/bordercorner{
 	dir = 8
@@ -23825,12 +23837,8 @@
 /area/site53/uhcz/hallways)
 "fwd" = (
 /obj/structure/table/standard,
-/obj/machinery/photocopier{
-	pixel_y = 3
-	},
-/obj/effect/floor_decal/corner/orange/border{
-	dir = 1
-	},
+/obj/item/paper_bin,
+/obj/item/pen,
 /turf/simulated/floor/tiled/monotile/white,
 /area/site53/science/seniorresearchera)
 "fwm" = (
@@ -24071,12 +24079,11 @@
 /turf/simulated/floor,
 /area/site53/surface/bunker)
 "fNo" = (
-/obj/structure/closet/secure_closet/scientist,
-/obj/effect/floor_decal/corner/orange/border{
-	dir = 5
+/obj/structure/bed/chair/office/light{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearcherb)
+/area/site53/science/seniorresearchera)
 "fNH" = (
 /obj/structure/bed/chair{
 	dir = 1;
@@ -24768,12 +24775,16 @@
 /turf/simulated/floor/tiled/dark,
 /area/site53/lhcz/hczguardgear)
 "gyL" = (
-/obj/item/modular_computer/console/preset/aislot/research{
-	dir = 4
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
 	},
+/obj/structure/cable/green,
 /obj/effect/floor_decal/corner/orange/border{
 	dir = 8
 	},
+/obj/machinery/papershredder,
 /turf/simulated/floor/tiled/monotile/white,
 /area/site53/science/seniorresearchera)
 "gyQ" = (
@@ -24867,12 +24878,8 @@
 /turf/simulated/floor/tiled/monotile/white,
 /area/site53/science/seniorresearchera)
 "gFo" = (
-/obj/item/modular_computer/console/preset/cardslot/command{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/orange/border{
-	dir = 10
-	},
+/obj/effect/floor_decal/corner/orange/border,
+/obj/structure/table/standard,
 /turf/simulated/floor/tiled/monotile/white,
 /area/site53/science/seniorresearchera)
 "gHa" = (
@@ -24988,14 +24995,9 @@
 /turf/simulated/floor,
 /area/site53/surface/bunker)
 "gOz" = (
-/obj/item/modular_computer/console/preset/aislot/research{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/orange/border{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearcherb)
+/obj/structure/table/standard,
+/turf/simulated/floor/tiled/monotile,
+/area/site53/reswing/robotics)
 "gOV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -25051,18 +25053,16 @@
 /turf/simulated/floor/tiled/freezer,
 /area/site53/lowertrams/hub)
 "gRd" = (
-/obj/effect/catwalk_plated/dark,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/effect/floor_decal/corner/orange/border{
+	dir = 9
 	},
-/obj/machinery/light/small{
-	dir = 8;
-	icon_state = "bulb1"
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -23
 	},
-/turf/simulated/floor,
-/area/site53/uhcz/hallways)
+/obj/structure/bookcase/manuals/xenoarchaeology,
+/turf/simulated/floor/tiled/monotile/white,
+/area/site53/science/seniorresearchera)
 "gRy" = (
 /obj/structure/table/standard,
 /obj/machinery/cell_charger,
@@ -25098,15 +25098,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/site53/uhcz/scp096)
-"gUq" = (
-/obj/structure/bed/chair/office/light{
-	dir = 4
-	},
-/obj/effect/landmark/start{
-	name = "Senior Researcher"
-	},
-/turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearcherb)
 "gUC" = (
 /obj/structure/closet/crate/bin,
 /turf/simulated/floor/tiled/monotile,
@@ -26944,10 +26935,12 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/uhcz/scp106containment)
 "iNh" = (
-/obj/structure/cable/green,
-/obj/machinery/power/apc{
-	name = "south bump";
-	pixel_y = -24
+/obj/machinery/button/blast_door{
+	id_tag = "Humanoid Lockdown";
+	name = "Humanoid Lockdown";
+	req_access = list(list("ACCESS_SECURITY_LEVEL3","ACCESS_SCIENCE_LEVEL3"));
+	pixel_y = -25;
+	dir = 1
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/site53/ulcz/humanoidcontainment)
@@ -27666,18 +27659,14 @@
 /turf/simulated/floor/wood,
 /area/site53/llcz/entrance_checkpoint)
 "jBO" = (
-/obj/machinery/button/blast_door{
-	id_tag = "Humanoid Containment South";
-	name = "Humanoid Containment South";
-	pixel_y = 24
+/obj/effect/floor_decal/corner/orange/border{
+	dir = 1
 	},
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
+/obj/machinery/light_switch{
+	pixel_y = 25
 	},
-/turf/simulated/floor/tiled/steel_grid,
-/area/site53/ulcz/humanoidcontainment)
+/turf/simulated/floor/tiled/monotile/white,
+/area/site53/science/seniorresearchera)
 "jBQ" = (
 /obj/structure/table/standard,
 /obj/item/reagent_containers/glass/bucket,
@@ -27840,12 +27829,9 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/site53/uhcz/generalpurpose3)
 "jKc" = (
-/obj/effect/catwalk_plated/dark,
-/obj/machinery/light/small{
-	dir = 8;
-	icon_state = "bulb1"
-	},
-/turf/simulated/floor,
+/obj/structure/table/rack,
+/obj/effect/spawner/lootdrop,
+/turf/simulated/floor/tiled/steel_grid,
 /area/site53/uhcz/hallways)
 "jKi" = (
 /obj/effect/paint_stripe/gray,
@@ -27855,11 +27841,13 @@
 /turf/simulated/wall/prepainted,
 /area/site53/ulcz/office)
 "jKR" = (
-/obj/effect/floor_decal/corner/orange/border{
-	dir = 4
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearcherb)
+/turf/simulated/floor/tiled/steel_grid,
+/area/site53/ulcz/humanoidcontainment)
 "jLw" = (
 /obj/effect/catwalk_plated/white,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -27876,11 +27864,13 @@
 /turf/simulated/floor,
 /area/site53/ulcz/hallways)
 "jML" = (
-/obj/effect/floor_decal/corner/orange/border{
-	dir = 6
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb1"
 	},
-/turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearchera)
+/obj/effect/catwalk_plated/dark,
+/turf/simulated/floor,
+/area/site53/uhcz/hallways)
 "jNc" = (
 /obj/effect/floor_decal/industrial/outline/orange,
 /obj/structure/bed/chair,
@@ -27997,15 +27987,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/site53/llcz/entrance_checkpoint)
-"jUv" = (
-/obj/structure/table/standard,
-/obj/effect/floor_decal/corner/orange/border{
-	dir = 8
-	},
-/obj/item/paper_bin,
-/obj/item/pen,
-/turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearchera)
 "jVk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -28341,12 +28322,12 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/site53/ulcz/scp2427_3)
 "koI" = (
-/obj/machinery/photocopier{
-	pixel_y = 3
-	},
-/obj/structure/table/reinforced,
-/turf/simulated/floor/tiled/steel_grid,
-/area/site53/ulcz/humanoidcontainment)
+/obj/structure/table/standard,
+/obj/item/paper_bin,
+/obj/item/pen,
+/obj/effect/floor_decal/corner/orange/border,
+/turf/simulated/floor/tiled/monotile/white,
+/area/site53/science/seniorresearchera)
 "koR" = (
 /obj/machinery/camera/network/lcz{
 	c_tag = "SCP 216";
@@ -28467,9 +28448,7 @@
 /obj/effect/floor_decal/corner/yellow/half{
 	dir = 8
 	},
-/obj/structure/closet/secure_closet/engineering_personal{
-	req_access = list("ACCESS_ENGINEERING_LEVEL2")
-	},
+/obj/structure/closet/secure_closet/engineering_personal,
 /obj/item/device/flashlight{
 	pixel_y = 15
 	},
@@ -28921,13 +28900,8 @@
 /turf/simulated/floor,
 /area/site53/llcz/checkequip)
 "kWi" = (
-/obj/effect/catwalk_plated/dark,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/turf/simulated/floor,
+/obj/machinery/door/airlock/highsecurity,
+/turf/simulated/floor/tiled/steel_grid,
 /area/site53/uhcz/hallways)
 "kXd" = (
 /obj/effect/floor_decal/corner/red/bordercorner{
@@ -29061,18 +29035,18 @@
 /turf/simulated/floor,
 /area/site53/ulcz/scp914)
 "lfb" = (
-/obj/structure/table/reinforced,
-/obj/item/modular_computer/laptop/preset/custom_loadout/advanced,
-/obj/machinery/button/blast_door{
-	dir = 4;
-	id_tag = "Humanoid Airlock Window";
-	name = "Humanoid Airlock Window";
-	pixel_x = -25;
-	req_access = list(list("ACCESS_SECURITY_LEVEL3","ACCESS_SCIENCE_LEVEL3"))
+/obj/machinery/door/airlock/highsecurity{
+	name = "Humanoid Containment Unit"
 	},
-/obj/machinery/camera/autoname{
-	name = "SCP-049 Observation 2";
-	network = list("Heavy                Containment                Zone                Network")
+/obj/machinery/door/blast/regular{
+	begins_closed = 0;
+	id_tag = "Humanoid Lockdown";
+	name = "Humanoid Lockdown"
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/site53/ulcz/humanoidcontainment)
@@ -29319,21 +29293,12 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/site53/science/aicobservation)
 "lxI" = (
-/obj/machinery/door/airlock/highsecurity{
-	name = "Humanoid Containment Unit"
+/obj/machinery/camera/motion{
+	c_tag = "AIC Entrance";
+	network = list("Entrance Zone Network")
 	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/door/blast/regular{
-	begins_closed = 0;
-	id_tag = "Humanoid Lockdown";
-	name = "Humanoid Lockdown"
-	},
-/turf/simulated/floor/tiled/steel_grid,
-/area/site53/uhcz/hallways)
+/turf/simulated/floor/tiled/techmaint,
+/area/site53/science/aicobservation)
 "lxL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -30277,35 +30242,12 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/engineering/bathrooms)
 "muh" = (
-/obj/structure/table/reinforced,
-/obj/item/clothing/shoes/orange,
-/obj/item/clothing/shoes/orange,
-/obj/item/clothing/shoes/orange,
-/obj/item/clothing/shoes/orange,
-/obj/item/clothing/shoes/orange,
-/obj/item/clothing/shoes/orange,
-/obj/item/clothing/shoes/orange,
-/obj/item/clothing/shoes/orange,
-/obj/item/clothing/shoes/orange,
-/obj/item/clothing/shoes/orange,
-/obj/item/clothing/under/scp/dclass,
-/obj/item/clothing/under/scp/dclass,
-/obj/item/clothing/under/scp/dclass,
-/obj/item/clothing/under/scp/dclass,
-/obj/item/clothing/under/scp/dclass,
-/obj/item/clothing/under/scp/dclass,
-/obj/item/clothing/under/scp/dclass,
-/obj/item/clothing/under/scp/dclass,
-/obj/item/clothing/under/scp/dclass,
+/obj/structure/closet/l3closet/scientist/multi,
 /obj/machinery/light{
-	dir = 4
+	dir = 1
 	},
-/obj/machinery/camera/autoname{
-	name = "SCP-049 Observation 2";
-	network = list("Heavy                Containment                Zone                Network")
-	},
-/turf/simulated/floor/tiled/steel_grid,
-/area/site53/ulcz/humanoidcontainment)
+/turf/simulated/floor/tiled/monotile,
+/area/site53/reswing/xenobiology)
 "mur" = (
 /obj/machinery/camera/autoname{
 	dir = 1;
@@ -30451,8 +30393,7 @@
 	},
 /obj/item/paper{
 	info = "Weapons have been moved to the armory, use the new weapon dispenser devices.";
-	name = "notice from the council";
-	text = null
+	name = "notice from the council"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/site53/lhcz/hczguardgear)
@@ -30951,13 +30892,6 @@
 /obj/item/lipstick/random,
 /turf/simulated/floor/tiled,
 /area/site53/uhcz/securitypost)
-"naq" = (
-/obj/machinery/camera/motion{
-	c_tag = "AIC Entrance";
-	network = list("Entrance                Zone                Network")
-	},
-/turf/simulated/floor/tiled/techmaint,
-/area/site53/science/aicobservation)
 "naI" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "LCZ Shotgun Storage";
@@ -30991,18 +30925,11 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/site53/ulcz/humanoidcontainment)
 "ndt" = (
-/obj/machinery/camera/autoname{
-	dir = 1;
-	network = list("Heavy                Containment                Zone                Network")
+/obj/effect/floor_decal/corner/orange/border{
+	dir = 1
 	},
-/obj/effect/catwalk_plated/dark,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor,
-/area/site53/uhcz/hallways)
+/turf/simulated/floor/tiled/monotile/white,
+/area/site53/science/seniorresearchera)
 "ndv" = (
 /obj/machinery/light{
 	dir = 1
@@ -31047,17 +30974,9 @@
 /turf/simulated/floor/plating,
 /area/site53/lowertrams/maintenance)
 "ngB" = (
-/obj/effect/floor_decal/corner/orange/border{
-	dir = 8
-	},
-/obj/machinery/power/apc{
-	dir = 8;
-	name = "west bump";
-	pixel_x = -24
-	},
-/obj/structure/cable/green,
-/turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearcherb)
+/obj/machinery/computer/rdconsole/core,
+/turf/simulated/floor/tiled/monotile,
+/area/site53/reswing/robotics)
 "ngF" = (
 /obj/structure/femur_breaker,
 /turf/simulated/floor/reinforced,
@@ -31696,13 +31615,14 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/site53/ulcz/scp2427_3)
 "nQM" = (
-/obj/machinery/cooker/fryer,
-/obj/machinery/camera/autoname{
-	name = "SCP-049 Observation 2";
-	network = list("Heavy                Containment                Zone                Network")
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/site53/ulcz/humanoidcontainment)
+/obj/effect/catwalk_plated/dark,
+/turf/simulated/floor,
+/area/site53/uhcz/hallways)
 "nQR" = (
 /obj/effect/floor_decal/corner/red/border{
 	dir = 5
@@ -31710,19 +31630,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/site53/uhcz/securitypost)
 "nRf" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/light{
-	dir = 1
-	},
+/obj/machinery/cooker/fryer,
 /obj/machinery/camera/autoname{
 	name = "SCP-049 Observation 2";
-	network = list("Heavy                Containment                Zone                Network")
+	network = list("Heavy Containment Zone Network")
 	},
-/turf/simulated/floor/tiled/steel_grid,
+/turf/simulated/floor/tiled/dark/monotile,
 /area/site53/ulcz/humanoidcontainment)
 "nRz" = (
 /obj/structure/table/standard,
@@ -31964,9 +31877,11 @@
 /turf/simulated/floor/exoplanet/grass,
 /area/site53/uhcz/scp1507containment)
 "ogX" = (
-/obj/structure/closet/secure_closet/scientist,
-/obj/effect/floor_decal/corner/orange/border{
-	dir = 5
+/obj/structure/bed/chair/office/light{
+	dir = 8
+	},
+/obj/effect/landmark/start{
+	name = "Senior Researcher"
 	},
 /turf/simulated/floor/tiled/monotile/white,
 /area/site53/science/seniorresearchera)
@@ -32211,12 +32126,13 @@
 /turf/simulated/floor/tiled/monotile/white,
 /area/site53/surface/explorers/surrounding)
 "ote" = (
-/obj/machinery/papershredder,
-/obj/effect/floor_decal/corner/orange/border{
-	dir = 1
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearcherb)
+/turf/simulated/floor/tiled/monotile,
+/area/site53/reswing/xenobiology)
 "otv" = (
 /obj/structure/table/standard,
 /obj/structure/window/reinforced{
@@ -32522,11 +32438,13 @@
 /turf/simulated/floor/tiled,
 /area/site53/lowertrams/hub)
 "oJC" = (
-/obj/machinery/disposal,
-/obj/structure/disposalpipe/trunk,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/monotile/white,
-/area/site53/reswing/xenobiology)
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/site53/ulcz/humanoidcontainment)
 "oJJ" = (
 /obj/machinery/button/alternate/door/bolts{
 	dir = 4;
@@ -32944,11 +32862,11 @@
 /obj/effect/floor_decal/corner/orange/border{
 	dir = 4
 	},
-/obj/machinery/light{
-	dir = 4
+/obj/item/modular_computer/console/preset/aislot/research{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearcherb)
+/area/site53/science/seniorresearchera)
 "pku" = (
 /obj/structure/table/standard,
 /obj/item/storage/box/flashbangs,
@@ -33036,9 +32954,12 @@
 	name = "west bump";
 	pixel_x = -24
 	},
-/obj/structure/cable/green,
 /obj/effect/floor_decal/corner/orange/border{
 	dir = 8
+	},
+/obj/structure/table/standard,
+/obj/machinery/photocopier{
+	pixel_y = 3
 	},
 /turf/simulated/floor/tiled/monotile/white,
 /area/site53/science/seniorresearchera)
@@ -33095,12 +33016,9 @@
 /turf/simulated/floor,
 /area/site53/surface/bunker)
 "pxf" = (
-/obj/effect/floor_decal/corner/orange/border,
-/obj/structure/filingcabinet/wallcabinet{
-	pixel_y = -24
-	},
-/turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearcherb)
+/obj/machinery/light,
+/turf/simulated/floor/tiled/steel_grid,
+/area/site53/ulcz/humanoidcontainment)
 "pyn" = (
 /obj/structure/table/standard,
 /obj/machinery/photocopier/faxmachine,
@@ -34004,8 +33922,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/site53/llcz/dclass/armory)
 "qCb" = (
+/obj/effect/floor_decal/corner/orange/border{
+	dir = 10
+	},
+/obj/structure/closet/secure_closet/scientist,
 /turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearcherb)
+/area/site53/science/seniorresearchera)
 "qCX" = (
 /obj/machinery/light{
 	dir = 8
@@ -34083,10 +34005,17 @@
 /turf/simulated/floor/tiled/monotile/white,
 /area/site53/ulcz/hallways)
 "qIF" = (
-/obj/structure/table/standard,
-/obj/item/folder/nt/rd,
-/turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearcherb)
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/glass/research{
+	name = "Senior Researcher Office B";
+	req_access = list("ACCESS_SCIENCE_LEVEL4")
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/site53/science/seniorresearchera)
 "qIZ" = (
 /obj/structure/table/reinforced,
 /obj/item/device/flashlight/lamp,
@@ -34944,21 +34873,15 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/uhcz/scp247observation)
 "rDY" = (
-/obj/effect/catwalk_plated/dark,
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
+/obj/effect/floor_decal/industrial/hatch/red,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
 	},
-/obj/machinery/button/blast_door{
-	dir = 4;
-	id_tag = "Humanoid Lockdown";
-	name = "Humanoid Lockdown";
-	pixel_x = -25;
-	req_access = list(list("ACCESS_SECURITY_LEVEL3","ACCESS_SCIENCE_LEVEL3"))
+/obj/machinery/light{
+	dir = 1
 	},
-/turf/simulated/floor,
-/area/site53/uhcz/hallways)
+/turf/simulated/floor/tiled/monotile,
+/area/site53/reswing/xenobiology)
 "rEG" = (
 /obj/structure/table/standard,
 /turf/simulated/floor/tiled/monotile/white,
@@ -36352,8 +36275,7 @@
 /obj/structure/table/steel,
 /obj/item/paper{
 	info = "WARNING: Testing on SCP-096 is not permitted without explicit O5 permission. Only break glass in case of approved test or emergencies.";
-	name = "notice from council";
-	text = null
+	name = "notice from council"
 	},
 /obj/effect/floor_decal/corner/red{
 	dir = 10
@@ -37024,8 +36946,12 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/site53/science/aicobservation)
 "uce" = (
-/turf/space,
-/area/site53/uhcz/hallways)
+/obj/structure/bed/chair/office/light,
+/obj/effect/landmark/start{
+	name = "Senior Researcher"
+	},
+/turf/simulated/floor/tiled/monotile/white,
+/area/site53/science/seniorresearchera)
 "ucY" = (
 /obj/structure/bed/chair/office/light{
 	dir = 8
@@ -37445,12 +37371,9 @@
 /turf/simulated/floor/reinforced,
 /area/site53/uhcz/scp457containment)
 "uFy" = (
-/obj/structure/bed/chair/office/light{
-	dir = 4
-	},
-/obj/effect/landmark/start{
-	name = "Senior Researcher"
-	},
+/obj/effect/floor_decal/corner/orange/border,
+/obj/structure/table/standard,
+/obj/item/reagent_containers/food/drinks/glass2/coffeecup,
 /turf/simulated/floor/tiled/monotile/white,
 /area/site53/science/seniorresearchera)
 "uGj" = (
@@ -37728,21 +37651,6 @@
 /obj/item/device/camera_film,
 /turf/simulated/floor/tiled/monotile,
 /area/site53/llcz/scp513)
-"uWI" = (
-/obj/effect/floor_decal/corner/orange/border{
-	dir = 9
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/light_switch{
-	dir = 4;
-	pixel_x = -23
-	},
-/turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearcherb)
 "uXa" = (
 /obj/structure/table/standard,
 /obj/machinery/button/blast_door{
@@ -37849,10 +37757,16 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/llcz/entrance_checkpoint)
 "vdk" = (
-/obj/machinery/light/spot,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/l3closet/scientist,
-/turf/simulated/floor/tiled/monotile/white,
+/obj/machinery/door/airlock/glass/research{
+	name = "Xenobiology Laboratory";
+	req_access = list("ACCESS_SCIENCE_LEVEL3")
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled,
 /area/site53/reswing/xenobiology)
 "vdC" = (
 /obj/structure/flora/pottedplant/minitree,
@@ -38184,14 +38098,14 @@
 /turf/simulated/floor/wood/mahogany,
 /area/chapel)
 "vuH" = (
-/obj/structure/table/standard,
-/obj/effect/floor_decal/corner/orange/border{
-	dir = 8
+/obj/effect/paint_stripe/red,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
-/obj/item/paper_bin,
-/obj/item/pen,
-/turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearcherb)
+/turf/simulated/wall/titanium,
+/area/site53/uhcz/hallways)
 "vuY" = (
 /obj/machinery/light{
 	dir = 1
@@ -39482,11 +39396,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/site53/engineering/primaryhallway)
 "wLC" = (
-/obj/effect/floor_decal/corner/orange/border{
-	dir = 4
-	},
-/obj/machinery/light{
-	dir = 4
+/obj/effect/floor_decal/corner/orange/border,
+/obj/item/modular_computer/console/preset/aislot/research{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/monotile/white,
 /area/site53/science/seniorresearchera)
@@ -39582,9 +39494,12 @@
 /turf/simulated/floor/wood/mahogany,
 /area/chapel)
 "wRp" = (
-/obj/structure/table/standard,
-/turf/simulated/floor/tiled/monotile/white,
-/area/site53/science/seniorresearcherb)
+/obj/effect/floor_decal/industrial/hatch/red,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/site53/reswing/xenobiology)
 "wRx" = (
 /obj/item/device/assembly/infra,
 /obj/item/device/assembly/infra,
@@ -39734,8 +39649,7 @@
 /area/site53/engineering/primaryhallway)
 "wVL" = (
 /obj/effect/floor_decal/corner/blue/border{
-	dir = 4;
-	icon_state = "bordercolor"
+	dir = 4
 	},
 /obj/structure/cable/green{
 	d1 = 1;
@@ -40400,11 +40314,17 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/site53/surface/bunker)
 "xKh" = (
-/obj/structure/sign/dontlook{
-	pixel_y = 32
+/obj/structure/table/reinforced,
+/obj/item/modular_computer/laptop/preset/custom_loadout/advanced,
+/obj/machinery/button/blast_door{
+	dir = 4;
+	id_tag = "Humanoid Airlock Window";
+	name = "Humanoid Airlock Window";
+	pixel_x = -25;
+	req_access = list(list("ACCESS_SECURITY_LEVEL3","ACCESS_SCIENCE_LEVEL3"))
 	},
 /turf/simulated/floor/tiled/steel_grid,
-/area/site53/uhcz/hallways)
+/area/site53/ulcz/humanoidcontainment)
 "xLV" = (
 /obj/effect/floor_decal/corner/orange/mono,
 /obj/structure/cable{
@@ -40612,12 +40532,6 @@
 "xWw" = (
 /turf/simulated/floor/tiled/monotile,
 /area/site53/llcz/scp263)
-"xXC" = (
-/obj/structure/sign/scp/euclid_scp{
-	pixel_y = 32
-	},
-/turf/simulated/floor/tiled/steel_grid,
-/area/site53/uhcz/hallways)
 "xXL" = (
 /obj/structure/bed/chair/office/light,
 /turf/simulated/floor/tiled/monotile/white,
@@ -70472,7 +70386,6 @@ afd
 afd
 afd
 afd
-afd
 afL
 anA
 aTg
@@ -70484,6 +70397,7 @@ aTg
 aTg
 aTg
 aTg
+aeB
 aeB
 aeB
 aax
@@ -70718,7 +70632,6 @@ azA
 azA
 azA
 azA
-afd
 nHl
 wDh
 wDh
@@ -70742,6 +70655,7 @@ qQb
 vtK
 aTg
 aTg
+aeB
 aeB
 aax
 amW
@@ -70975,7 +70889,6 @@ azA
 azA
 azA
 azA
-afd
 vtO
 afv
 afv
@@ -70999,6 +70912,7 @@ aOW
 aOW
 vVK
 aTg
+aeB
 aeB
 aax
 amW
@@ -71233,7 +71147,6 @@ azA
 azA
 azA
 afd
-afd
 lTG
 afd
 afd
@@ -71256,6 +71169,7 @@ lwQ
 lwQ
 vOO
 aTg
+aeB
 aeB
 aax
 amW
@@ -71489,7 +71403,6 @@ azA
 azA
 azA
 azA
-afd
 azz
 azz
 azz
@@ -71513,6 +71426,7 @@ aOW
 aOW
 bbP
 aTg
+aeB
 aeB
 aax
 aqt
@@ -71746,7 +71660,6 @@ azA
 azA
 azA
 azA
-afd
 azz
 owK
 afv
@@ -71770,6 +71683,7 @@ aOW
 kDD
 bbP
 aTg
+aeB
 aeB
 aax
 aax
@@ -72003,7 +71917,6 @@ azA
 azA
 azA
 azA
-afd
 azz
 afv
 afv
@@ -72027,6 +71940,7 @@ aOW
 aOW
 xCR
 aTg
+aeB
 aeB
 aeB
 aeB
@@ -72260,7 +72174,6 @@ azA
 azA
 azA
 azA
-afd
 azz
 afv
 svB
@@ -72284,6 +72197,7 @@ aOW
 iZA
 bwx
 aTg
+aeB
 aeB
 aeB
 aeB
@@ -72517,7 +72431,6 @@ azA
 azA
 azA
 azA
-afd
 oBV
 oHL
 afd
@@ -72541,6 +72454,7 @@ aOW
 pnC
 eCf
 aTg
+aeB
 aeB
 aeB
 aeB
@@ -72774,7 +72688,6 @@ azA
 azA
 azA
 azA
-afd
 azz
 afv
 svB
@@ -72798,6 +72711,7 @@ aTg
 vGY
 aLn
 aTg
+aeB
 aeB
 aeB
 aeB
@@ -73031,7 +72945,6 @@ azA
 azA
 azA
 azA
-afL
 azz
 afv
 afv
@@ -73055,6 +72968,7 @@ aoJ
 aOW
 aTi
 aTg
+aeB
 aeB
 aeB
 aeB
@@ -73288,7 +73202,6 @@ azA
 azA
 azA
 azA
-afd
 azz
 owK
 afv
@@ -73312,6 +73225,7 @@ aoJ
 aOW
 bbP
 aTg
+aeB
 aeB
 aeB
 aeB
@@ -73545,7 +73459,6 @@ azA
 azA
 azA
 azA
-afd
 azz
 azz
 azz
@@ -73569,6 +73482,7 @@ aTg
 aOW
 bbP
 aTg
+aIi
 aIi
 aIi
 aIi
@@ -73802,7 +73716,6 @@ azA
 azA
 azA
 azA
-afL
 afd
 afd
 afd
@@ -73832,6 +73745,7 @@ agW
 agW
 agW
 aid
+agW
 ahF
 agW
 aiA
@@ -74066,7 +73980,6 @@ azA
 azA
 azA
 azA
-azA
 afd
 liT
 liT
@@ -74080,7 +73993,7 @@ afb
 aSR
 oLF
 aIi
-naq
+lxI
 aOW
 aoJ
 aMp
@@ -74089,6 +74002,7 @@ aMp
 aMp
 aMp
 ahc
+aMp
 aih
 aMp
 aMp
@@ -74323,7 +74237,6 @@ azA
 azA
 azA
 azA
-azA
 afd
 mlt
 kIy
@@ -74346,6 +74259,7 @@ aJA
 aJA
 aIi
 aKc
+aIi
 aIi
 afK
 aMp
@@ -74580,7 +74494,6 @@ azA
 azA
 azA
 azA
-azA
 afd
 afd
 afd
@@ -74603,6 +74516,7 @@ aJA
 afi
 aKy
 aKd
+gOz
 aJA
 aMp
 aMp
@@ -74839,7 +74753,6 @@ azA
 azA
 azA
 azA
-azA
 aIi
 aIi
 aIi
@@ -74857,9 +74770,10 @@ agX
 aMp
 ahc
 aJA
-aJp
+ngB
 ail
 aKd
+fgG
 aJA
 aMp
 aMp
@@ -75096,7 +75010,6 @@ azA
 azA
 azA
 azA
-azA
 aIi
 nvb
 aJn
@@ -75117,6 +75030,7 @@ aJA
 adK
 aJn
 aKd
+gOz
 aJA
 aJA
 aJA
@@ -75125,7 +75039,7 @@ aJA
 aJA
 aJA
 aJA
-aJA
+aIi
 aIi
 azA
 azA
@@ -75353,7 +75267,6 @@ azA
 azA
 azA
 azA
-azA
 aIi
 aan
 uza
@@ -75374,7 +75287,7 @@ aJA
 aFc
 aJn
 aKd
-fgG
+aJn
 aaS
 aaS
 vNo
@@ -75384,6 +75297,7 @@ aMp
 aMp
 afz
 aIi
+azA
 azA
 azA
 azA
@@ -75610,7 +75524,6 @@ azA
 azA
 azA
 azA
-azA
 aIi
 mdA
 xQD
@@ -75641,6 +75554,7 @@ wNz
 aMp
 aOV
 aIi
+azA
 azA
 azA
 azA
@@ -75867,7 +75781,6 @@ azA
 azA
 azA
 azA
-azA
 aIi
 bmU
 cDv
@@ -75898,6 +75811,7 @@ aaP
 aLc
 lCG
 aIi
+azA
 azA
 azA
 azA
@@ -76124,7 +76038,6 @@ azA
 azA
 azA
 azA
-azA
 aIi
 aaa
 fYI
@@ -76155,6 +76068,7 @@ azD
 cMi
 aJq
 aIi
+azA
 azA
 azA
 azA
@@ -76381,7 +76295,6 @@ azA
 azA
 azA
 azA
-azA
 aIi
 aIi
 aIi
@@ -76412,6 +76325,7 @@ aIi
 aIi
 aIi
 aIi
+azA
 azA
 azA
 azA
@@ -76644,7 +76558,6 @@ azA
 azA
 azA
 azA
-azA
 aIi
 xyh
 aJn
@@ -76657,11 +76570,12 @@ aMp
 vtL
 nmB
 xMA
-prQ
-jUv
 gyL
-gFo
+prQ
+qCb
 aOB
+azA
+azA
 azA
 azA
 azA
@@ -76901,7 +76815,6 @@ azA
 azA
 azA
 azA
-azA
 aIi
 afi
 aJn
@@ -76913,12 +76826,13 @@ aJA
 aMp
 ahc
 aLU
-bHX
+ndt
 uPv
-qYS
-uFy
-wGk
+uPv
+gEM
 aOB
+azA
+azA
 azA
 azA
 azA
@@ -77158,7 +77072,6 @@ azA
 azA
 azA
 azA
-azA
 aIi
 aFc
 aJn
@@ -77170,12 +77083,13 @@ aIi
 afK
 ahc
 aLU
+ndt
 fwd
-uPv
 qYS
-fXE
-gEM
+gFo
 aOB
+azA
+azA
 azA
 azA
 azA
@@ -77415,7 +77329,6 @@ azA
 azA
 azA
 azA
-azA
 aIi
 adK
 aJn
@@ -77427,12 +77340,13 @@ tGo
 aMp
 ahc
 aLU
+ndt
+fXE
 ogX
-rCk
 wLC
-rCk
-jML
 aOB
+azA
+azA
 azA
 azA
 azA
@@ -77671,25 +77585,25 @@ azA
 azA
 azA
 azA
-azA
-azA
+aPx
 aIi
 aIi
 aIi
-aIi
-aIi
-aIi
-aIi
-aIi
+aPx
+aPx
+aPx
+aPx
+aPx
 aMp
 ahc
+aLU
+aIF
+rCk
+rCk
+aFs
 aOB
-aOB
-aOB
-aOB
-aOB
-aOB
-aOB
+azA
+azA
 azA
 azA
 azA
@@ -77925,28 +77839,28 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-aIi
+aPx
+aPx
+aPx
+aPx
+aMn
+bEw
+aMn
+aPx
+muh
+ahV
+ahV
+aPx
 aMp
 vtL
-dCF
-uWI
-ngB
-vuH
-gOz
-fiJ
-aqA
+aOB
+aOB
+aOB
+aOB
+aOB
+aOB
+azA
+azA
 azA
 azA
 azA
@@ -78181,29 +78095,29 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-aIi
+aPx
+aPx
+aMn
+ahp
+aMn
+aMn
+aMn
+aMn
+acb
+bkd
+bkd
+bkd
+acb
 aMp
 ahc
-aCl
-ote
+aOB
+acX
+prQ
 qCb
-wRp
-gUq
-aby
-aqA
+aOB
+azA
+azA
+azA
 azA
 azA
 azA
@@ -78437,30 +78351,30 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-aIi
+aPx
+aPx
+aMn
+aMn
+aMn
+aMn
+aMn
+aMn
+aMn
+vdk
+ote
+ote
+ote
+vdk
 aMp
 ahc
-aCl
-eWL
-qCb
-wRp
 qIF
-pxf
-aqA
+aCl
+uPv
+wGk
+aOB
+azA
+azA
+azA
 azA
 azA
 azA
@@ -78694,30 +78608,27 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-aIi
+aPx
+aPx
+aMn
+mfj
+rPM
+rPM
+rPM
+aMn
+aMn
+aPx
+rDY
+wRp
+wRp
+aPx
 agV
 ahc
-aCl
+aOB
+jBO
 fNo
-jKR
-pjL
-jKR
-ahs
-aqA
+wGk
+aOB
 azA
 azA
 azA
@@ -78737,11 +78648,14 @@ azA
 azA
 azA
 azA
-bIm
-bIm
-bIm
-bIm
-bIm
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
 azA
 azA
 azA
@@ -78951,30 +78865,37 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
+aPx
+smH
+aMn
+afD
+afB
+rPM
+rPM
+aMn
+aMn
 aPx
 aPx
-acb
-acX
 aPx
 aPx
+aPx
+aLU
+aLU
+aOB
+ndt
+qYS
 aqA
-aqA
-aqA
-aqA
-aqA
+aOB
+azA
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
 azA
 azA
 azA
@@ -78994,15 +78915,8 @@ azA
 azA
 azA
 azA
-bIm
-dLS
-sul
-kor
-bIm
-bIm
-bIm
-bIm
-bIm
+azA
+azA
 azA
 azA
 azA
@@ -79208,25 +79122,37 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
 aPx
-ahV
-bkd
+pHf
+aMn
+aMn
+aMn
+aMn
+aMn
+aMn
+aMn
+bjH
+heG
+heG
+heG
+aPx
+gRd
+biF
 biF
 aJe
-aPx
+fXE
+koI
+aOB
+azA
+urC
+jlN
+dZj
+urC
+sbY
+ljb
+tWa
+sbY
+urC
 azA
 azA
 azA
@@ -79248,18 +79174,6 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-tNk
-aKN
-xNg
-xNg
-emC
-yhJ
-rCJ
-ugr
-bIm
 azA
 azA
 azA
@@ -79465,25 +79379,37 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
 aPx
-ahV
-bkd
-biF
-aJe
+afV
+aMn
+aMn
+uaR
+aMn
+aMn
+aMn
+aMn
+aIB
+heG
+aKu
+agI
 aPx
+fiJ
+uPv
+uPv
+uPv
+uce
+uFy
+aOB
+azA
+urC
+icg
+iJy
+xPT
+ljb
+ljb
+aXV
+mLp
+urC
 azA
 azA
 azA
@@ -79502,21 +79428,9 @@ azA
 azA
 azA
 azA
-bIm
-bIm
-bIm
-bIm
-bIm
-bIm
-tAC
-ybV
-aVl
-aKM
-rcN
-aKM
-aKM
-bbj
-bIm
+azA
+azA
+azA
 azA
 azA
 azA
@@ -79722,25 +79636,37 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
+aPx
+afX
+aMn
+aKj
+vmr
+rPM
+rPM
+aMn
+bHX
+aJY
+jwF
+fTi
+heG
 aPx
 aib
-bkd
-biF
+rCk
+aJp
 aJg
-aPx
+pjL
+cWo
+aOB
+azA
+urC
+urC
+urC
+urC
+bTK
+ljb
+ljb
+ljb
+urC
 azA
 azA
 azA
@@ -79758,22 +79684,10 @@ azA
 azA
 azA
 azA
-bIm
-bIm
-xDM
-ljc
-xGw
-mLD
-icV
-crW
-bIm
-bIm
-bIm
-bIm
-kxP
-aKM
-aKM
-bIm
+azA
+azA
+azA
+azA
 azA
 azA
 azA
@@ -79979,25 +79893,51 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
+aPx
+aoP
+aMn
+rPM
+rPM
+rDj
+rPM
+aMn
+eoN
 aPx
 aPx
 aPx
 aPx
-acb
-acX
 aPx
-aPx
+aOB
+aOB
+aOB
+aOB
+aOB
+aOB
+aOB
+azA
+urC
+uGE
+eXf
+urC
+kEI
+kEI
+kEI
+ikk
+urC
+azA
+urC
+urC
+jzT
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
 azA
 azA
 azA
@@ -80005,39 +79945,13 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-bIm
-oBp
-dOs
-hzp
-hzp
-hzp
-ube
-bIm
-hGF
-mBn
-hGF
-bIm
-vww
-aKM
-aKM
-bIm
 aBo
 aBo
 aBo
 aBo
 aBo
 aBo
-azA
+vuH
 azA
 azA
 azA
@@ -80236,30 +80150,20 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
 aPx
-smH
+aKH
 aMn
-ahp
-bEw
 aMn
-aIF
-aJh
+aMn
+aMn
+aMn
+aMn
+aby
+aJY
+vxd
+fTi
+heG
 aPx
-aPx
-aPx
-aPx
-aPx
-aPx
 azA
 azA
 azA
@@ -80268,32 +80172,42 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-bIm
-qvi
-hzp
-hzp
-hzp
-hzp
-wip
-bIm
-chW
-chW
-chW
-bIm
-rkv
-aKM
-aKM
-bIm
+urC
+cBj
+giJ
+urC
+hoI
+oFR
+mZS
+hyr
+urC
+urC
+urC
+mjN
+lga
+iCF
+krP
+vdC
+kEI
+ehq
+mcz
+hyr
+eqf
+dyC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
 aBA
 aBA
 gpO
 aBA
 aBA
-aBo
 aBo
 ass
 ass
@@ -80493,29 +80407,19 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
 aPx
-pHf
-aMn
-mfj
-rPM
-rPM
-rPM
+aKH
 aMn
 aMn
-bjH
+aMn
+aMn
+aMn
+aMn
+aMn
+aIB
 heG
 heG
-heG
+agI
 aPx
 azA
 azA
@@ -80525,31 +80429,41 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-bIm
-aXE
-hzp
-hzp
-twW
-hzp
-ube
-swo
-aVs
-aVs
-aVs
-urr
-rkv
-aKM
-aKM
-bIm
-xXC
+urC
+pOU
+hUN
+ikk
+hUN
+hyr
+hyr
+hUN
+nMW
+hUN
+siB
+iyl
+iyl
+iyl
+iyl
+iyl
+kEI
+hnN
+hyr
+hyr
+hyr
+euW
+urC
+usK
+ieo
+usK
+urC
+aJh
+tSr
+iNh
+urC
+bTl
 ajR
 ajR
 ajR
-aBA
 aBT
 aBo
 aga
@@ -80750,29 +80664,19 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
 aPx
-afV
-aMn
-afD
-afB
-rPM
-rPM
+aKK
 aMn
 aMn
-aIB
+aMm
+vsb
+aMm
+aMn
+aMn
+bjH
 heG
-aKu
-agI
+heG
+heG
 aPx
 azA
 azA
@@ -80782,30 +80686,40 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-bIm
-qvi
-hzp
-hzp
-hzp
-hzp
-wip
-bIm
-lMF
-lMF
-lMF
-bIm
-rkv
-obI
-fSL
-fFD
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+blb
+urC
+rHr
+iyl
+iyl
+iyl
+iyl
+kEI
+rpF
+hyr
+uXd
+hyr
+gRz
+urC
+tXU
+buA
+buA
+urC
+iAX
+oJC
+hhj
+lfb
 akt
 akt
 ggM
-akt
 akt
 akt
 aYw
@@ -81008,28 +80922,18 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
 aPx
-afX
-aMn
-aMn
-aMn
-uaR
-aMn
-aMn
-bTl
-aJY
-jwF
-fTi
-heG
+bjH
+aJi
+aiF
+aPx
+aiF
+aJi
+bjH
+aPx
+aPx
+aPx
+aPx
 aPx
 azA
 azA
@@ -81043,27 +80947,37 @@ azA
 azA
 azA
 azA
-bIm
-eXV
-hRZ
-hzp
-hzp
-hzp
-mOX
-bIm
-xDp
-fte
-xDp
-bIm
-jNc
-xEi
-jJj
-bIm
-xKh
+azA
+azA
+azA
+azA
+azA
+azA
+urC
+fFm
+iyl
+wUY
+wUY
+iyl
+kEI
+nBh
+hyr
+hNx
+hyr
+hyr
+vEp
+qMp
+qMp
+qMp
+vlN
+nsU
+jKR
+nsU
+urC
+aBA
 ajR
 ajT
 ajR
-aBA
 aBT
 aBo
 bjD
@@ -81265,28 +81179,14 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
 aPx
-aoP
-aMn
-rPM
-aKj
-vmr
-rPM
-aMn
-vdk
+heG
+heG
+agY
 aPx
-aPx
-aPx
-aPx
+agY
+aKu
+heG
 aPx
 azA
 azA
@@ -81300,28 +81200,42 @@ azA
 azA
 azA
 azA
-bIm
-bIm
-ffJ
-gxR
-mwm
-gxR
-qro
-bIm
-bIm
-nNV
-bIm
-bIm
-rcy
-aKM
-aKM
-bIm
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+azA
+urC
+juH
+wUY
+eLf
+lOO
+iyl
+kEI
+kkD
+hyr
+hNx
+hyr
+hyr
+urC
+lHe
+lHe
+lHe
+urC
+xHF
+aFT
+urC
+urC
 aBA
 fEW
 ajT
 fEW
 aBA
-aBo
 aBo
 ass
 ass
@@ -81522,27 +81436,13 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
 aPx
-aKH
-aMn
-rPM
-rPM
-rPM
-rDj
-aMn
-oJC
-aJY
-vxd
-fTi
+heG
+heG
+aSy
+aPx
+aSy
+heG
 heG
 aPx
 azA
@@ -81557,29 +81457,43 @@ azA
 azA
 azA
 azA
+urC
+jlN
+dZj
+urC
+sbY
+ljb
+tWa
+sbY
+urC
 azA
-bIm
-bIm
-bIm
-bIm
-bIm
-bIm
-bIm
-xjn
-hAR
-kvY
-bIm
-rcy
-aKM
-aKM
-bIm
+urC
+tJn
+iyl
+iUu
+khQ
+iyl
+tjF
+hUN
+hyr
+hyr
+hyr
+niD
+urC
+wfV
+qMp
+gCJ
+urC
+nsU
+pxf
+urC
 aBo
 aBo
+vuH
 ake
 aBo
-aBo
-aBo
-azA
+vuH
+vuH
 azA
 azA
 azA
@@ -81779,28 +81693,14 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
 aPx
-aKH
-aMn
-aMn
-aMn
-aMn
-aMn
-aMn
-aMn
-aIB
 heG
+bjZ
 heG
-agI
+aPx
+heG
+bjZ
+heG
 aPx
 azA
 azA
@@ -81814,33 +81714,47 @@ azA
 azA
 azA
 azA
+urC
+icg
+iJy
+xPT
+ljb
+ljb
+aXV
+mLp
+urC
 azA
+urC
+kEI
+kEI
+kEI
+kEI
+wKN
+urC
+oWN
+oWN
+oWN
+oWN
+oWN
+urC
+urC
+otv
+urC
+urC
+fJe
+nsU
+urC
 azA
-azA
-azA
-azA
-azA
-azA
-bIm
-nOJ
-sJk
-aKM
-jQs
-aKM
-brk
-aKM
-bIm
 azA
 aBo
 ajT
 aBo
-uce
-uce
-uce
-uce
-aFT
-aFT
-aFT
+azA
+azA
+azA
+azA
+azA
+azA
 azA
 ass
 keu
@@ -82036,28 +81950,14 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
 aPx
-aKK
-aMn
-aMn
-aMm
-vsb
-aMm
-aMn
-aMn
-bjH
-heG
-heG
-heG
+aPx
+aPx
+aPx
+aPx
+aPx
+aPx
+aPx
 aPx
 azA
 azA
@@ -82071,26 +81971,40 @@ azA
 azA
 azA
 azA
+urC
+urC
+urC
+urC
+bTK
+ljb
+ljb
+ljb
+urC
 azA
+urC
+brK
+gNg
+tMx
+tNu
+hMF
+gHs
+jkQ
+eWp
+qyR
+pCp
+ndr
+ahs
+xKh
+fIB
+epk
+urC
+jdo
+nsU
+urC
 azA
-azA
-azA
-azA
-azA
-azA
-bIm
-sPh
-kdN
-hkp
-bIm
-bIm
-bIm
-bIm
-bIm
 azA
 aBo
 bQR
-aBo
 aBo
 aBo
 aBo
@@ -82303,19 +82217,6 @@ azA
 azA
 azA
 azA
-aPx
-bjH
-aJi
-aiF
-aPx
-aiF
-aJi
-aPx
-aPx
-aPx
-aPx
-aPx
-aPx
 azA
 azA
 azA
@@ -82327,27 +82228,40 @@ azA
 azA
 azA
 azA
+urC
+vxS
+eXf
+urC
+kEI
+kEI
+kEI
+ikk
+urC
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-bIm
-bIm
-bIm
-bIm
-bIm
-azA
-azA
-azA
+urC
+vKQ
+hMF
+kbO
+dhn
+hMF
+gHs
+rSk
+nsU
+nsU
+nsU
+nsU
+nsU
+nsU
+nsU
+cNb
+urC
+fJe
+nsU
+urC
 azA
 azA
 aBo
-eoN
-akt
+nQM
 akt
 akt
 akt
@@ -82560,14 +82474,6 @@ azA
 azA
 azA
 azA
-aPx
-heG
-heG
-agY
-aPx
-agY
-aKu
-aPx
 azA
 azA
 azA
@@ -82579,32 +82485,40 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
+urC
+cBj
+hyr
+urC
+hoI
+oFR
+mZS
+hyr
+urC
+urC
+urC
+oZI
+hMF
+vmh
+dhn
+hMF
+gHs
+vNN
+nsU
+nsU
+nsU
+nsU
+nsU
+nsU
+nsU
+nsU
+urC
+nsU
+nsU
+urC
 azA
 azA
 aBo
-ajT
-aBo
+ajR
 aBo
 aBo
 aBo
@@ -82817,14 +82731,6 @@ azA
 azA
 azA
 azA
-aPx
-heG
-heG
-aSy
-aPx
-aSy
-heG
-aPx
 azA
 azA
 azA
@@ -82836,33 +82742,41 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
+urC
+pOU
+hyr
+ikk
+hUN
+hyr
+hyr
+hUN
+xPT
+hUN
+sZn
+hMF
+hMF
+hMF
+hMF
+hMF
+gHs
+inT
+nsU
+nsU
+nsU
+nsU
+nsU
+nsU
+nsU
+nsU
+tII
+nsU
+pxf
+urC
 aBo
-ajT
 aBo
-azA
+aBo
+ajR
+aBo
 azA
 azA
 azA
@@ -83074,52 +82988,52 @@ azA
 azA
 azA
 azA
-aPx
-heG
-bjZ
-heG
-aPx
-heG
-bjZ
-aPx
-azA
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
 azA
 azA
 azA
 azA
 azA
 azA
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-akb
-aBo
 azA
+azA
+azA
+azA
+azA
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+kAB
+hMF
+tZi
+tZi
+hMF
+gHs
+bWr
+nsU
+nsU
+nsU
+nsU
+nsU
+sxX
+nsU
+sxX
+urC
+nsU
+nsU
+urC
+eWL
+aBA
+aBo
+jML
+aBo
 azA
 azA
 azA
@@ -83331,52 +83245,52 @@ azA
 azA
 azA
 azA
-aPx
-aPx
-aPx
-aPx
-aPx
-aPx
-aPx
-aPx
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
 azA
 urC
-jlN
-dZj
+pFP
+qrC
+wLQ
+eSG
+hMF
+gHs
+fME
+viC
+hiu
+pCp
+xCn
 urC
-sbY
-ljb
-tWa
-sbY
 urC
-azA
-azA
-azA
-azA
-azA
-azA
-aBo
-jKc
-ajR
-ajR
-ajR
-ajR
-jKc
-ajR
-ajR
-ajR
-ajR
-jKc
-rDY
-akt
-akt
-akt
-gRd
-akt
-akt
+tII
+urC
+urC
+urC
+urC
+urC
+aBA
+aBA
 kWi
+ajR
 aBo
-azA
 azA
 azA
 azA
@@ -83597,43 +83511,43 @@ azA
 azA
 azA
 azA
+azA
+azA
 urC
-icg
-iJy
-xPT
-ljb
-ljb
-aXV
-mLp
+urC
+urC
+urC
+urC
+urC
+urC
+urC
 urC
 azA
-azA
-azA
-azA
-azA
-azA
+urC
+kEI
+kEI
+kEI
+kEI
+mmw
+urC
+jee
+jee
+jee
+jee
+jee
+urC
+nsU
+nsU
+nsU
+nsU
+nsU
+nsU
+urC
+jKc
+aBA
 aBo
 aBo
 aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-lxI
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-aBo
-azA
 azA
 azA
 azA
@@ -83854,41 +83768,41 @@ azA
 azA
 azA
 azA
+azA
+azA
 urC
+jlN
+dZj
 urC
-urC
-urC
-bTK
+sbY
 ljb
-ljb
-ljb
+tWa
+sbY
 urC
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
+urC
+evd
+bHN
+lUD
+qKS
+hyr
+hIZ
+ggG
+qvG
+rYx
+nNn
+idc
+urC
+wHv
+nsU
+nsU
+nsU
+nsU
+nsU
+urC
 aBo
-cWo
 aBo
-azA
-azA
-azA
-azA
-azA
-azA
+aBo
 azA
 azA
 azA
@@ -84111,38 +84025,38 @@ azA
 azA
 azA
 azA
+azA
+azA
 urC
-uGE
-eXf
+icg
+iJy
+xPT
+ljb
+ljb
+aXV
+mLp
 urC
+azA
+urC
+hyr
+hyr
+hyr
+hyr
+hyr
 kEI
-kEI
-kEI
-ikk
+sYr
+uhy
+qvG
+uhy
+bIx
 urC
-azA
+dCF
+fwQ
+hVJ
+nOq
+jkJ
+dfj
 urC
-urC
-jzT
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-azA
-azA
-azA
-aBo
-lxI
-aBo
-urC
-urC
-azA
 azA
 azA
 azA
@@ -84368,38 +84282,38 @@ azA
 azA
 azA
 azA
-urC
-cBj
-giJ
-urC
-hoI
-oFR
-mZS
-hyr
-urC
-urC
-urC
-mjN
-lga
-iCF
-krP
-vdC
-kEI
-ehq
-mcz
-hyr
-eqf
-dyC
+azA
+azA
 urC
 urC
 urC
 urC
-urC
-nRf
-tSr
-nsU
+bTK
+ljb
+ljb
+ljb
 urC
 azA
+urC
+kls
+fSH
+fSH
+hyr
+qow
+kEI
+wRH
+qvG
+giK
+qvG
+nNn
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
 azA
 azA
 azA
@@ -84625,37 +84539,37 @@ azA
 azA
 azA
 azA
+azA
+azA
 urC
-pOU
-hUN
-ikk
-hUN
-hyr
-hyr
-hUN
-nMW
-hUN
-siB
-iyl
-iyl
-iyl
-iyl
-iyl
+vxS
+eXf
+urC
 kEI
-hnN
-hyr
-hyr
-hyr
-euW
+kEI
+kEI
+ikk
 urC
-usK
-ieo
-usK
 urC
-jBO
-hhj
-iNh
 urC
+fSH
+fSH
+fSH
+hyr
+iRf
+kEI
+qEa
+uhy
+mrs
+uhy
+hNz
+lRm
+urC
+azA
+azA
+azA
+azA
+azA
 azA
 azA
 aBo
@@ -84882,37 +84796,37 @@ azA
 azA
 azA
 azA
+azA
+azA
 urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-blb
-urC
-rHr
-iyl
-iyl
-iyl
-iyl
+cBj
+hyr
+ikk
+hyr
+hyr
+hyr
+hyr
+xPT
+hUN
+cFC
+hyr
+hyr
+hyr
+hyr
+iRY
 kEI
-rpF
-hyr
-uXd
-hyr
-gRz
+nRf
+qvG
+uhy
+qvG
+uhy
+rPm
 urC
-tXU
-buA
-buA
-urC
-iAX
-nsU
-nsU
-urC
+azA
+azA
+azA
+azA
+azA
 azA
 azA
 aBo
@@ -85141,35 +85055,35 @@ azA
 azA
 azA
 azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
-azA
 urC
-fFm
-iyl
-wUY
-wUY
-iyl
+pOU
+hUN
+urC
+oBE
+oFR
+mZS
+hUN
+urC
+urC
+urC
+lEX
+nbD
+hPI
+hLU
+vzD
 kEI
-nBh
-hyr
-hNx
-hyr
-hyr
-vEp
-qMp
-qMp
-qMp
-vlN
-nsU
-nsU
+wZG
+rmS
+wNk
+cRs
+mov
+nRz
 urC
-urC
+azA
+azA
+azA
+azA
+azA
 azA
 azA
 aBo
@@ -85396,6 +85310,8 @@ azA
 azA
 azA
 azA
+azA
+azA
 urC
 urC
 urC
@@ -85407,25 +85323,23 @@ urC
 urC
 azA
 urC
-juH
-wUY
-eLf
-lOO
-iyl
-kEI
-kkD
-hyr
-hNx
-hyr
-hyr
 urC
-lHe
-lHe
-lHe
 urC
-xHF
-nsU
 urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+urC
+azA
+azA
+azA
+azA
 azA
 azA
 azA
@@ -85653,38 +85567,38 @@ azA
 azA
 azA
 azA
-urC
-jlN
-dZj
-urC
-sbY
-ljb
-tWa
-sbY
-urC
-azA
-urC
-tJn
-iyl
-iUu
-khQ
-iyl
-tjF
-hUN
-hyr
-hyr
-hyr
-niD
-urC
-wfV
-qMp
-gCJ
-urC
-fJe
-nsU
-urC
 azA
 azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+bIm
+bIm
+bIm
+bIm
+bIm
 azA
 aBo
 aBo
@@ -85910,42 +85824,42 @@ azA
 azA
 azA
 azA
-urC
-icg
-iJy
-xPT
-ljb
-ljb
-aXV
-mLp
-urC
-azA
-urC
-kEI
-kEI
-kEI
-kEI
-wKN
-urC
-oWN
-oWN
-oWN
-oWN
-oWN
-urC
-urC
-otv
-urC
-urC
-jdo
-nsU
-urC
 azA
 azA
 azA
 azA
 azA
 azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+bIm
+dLS
+sul
+kor
+bIm
+bIm
+bIm
+bIm
+bIm
 azA
 azA
 aBo
@@ -86167,42 +86081,42 @@ azA
 azA
 azA
 azA
-urC
-urC
-urC
-urC
-bTK
-ljb
-ljb
-ljb
-urC
-azA
-urC
-brK
-gNg
-tMx
-tNu
-hMF
-gHs
-jkQ
-eWp
-qyR
-pCp
-ndr
-koI
-lfb
-fIB
-epk
-urC
-fJe
-nsU
-urC
 azA
 azA
 azA
 azA
 azA
 azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+tNk
+aKN
+xNg
+xNg
+emC
+yhJ
+rCJ
+ugr
+bIm
 azA
 azA
 azA
@@ -86424,42 +86338,42 @@ azA
 azA
 azA
 azA
-urC
-vxS
-eXf
-urC
-kEI
-kEI
-kEI
-ikk
-urC
-azA
-urC
-vKQ
-hMF
-kbO
-dhn
-hMF
-gHs
-rSk
-nsU
-nsU
-nsU
-nsU
-nsU
-nsU
-nsU
-cNb
-urC
-nsU
-nsU
-urC
 azA
 azA
 azA
 azA
 azA
 azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+bIm
+bIm
+bIm
+bIm
+bIm
+bIm
+tAC
+ybV
+aVl
+aKM
+rcN
+aKM
+aKM
+bbj
+bIm
 azA
 azA
 azA
@@ -86681,36 +86595,6 @@ azA
 azA
 azA
 azA
-urC
-cBj
-hyr
-urC
-hoI
-oFR
-mZS
-hyr
-urC
-urC
-urC
-oZI
-hMF
-vmh
-dhn
-hMF
-gHs
-vNN
-nsU
-nsU
-nsU
-nsU
-nsU
-nsU
-nsU
-nsU
-urC
-nsU
-nsU
-urC
 azA
 azA
 azA
@@ -86719,13 +86603,43 @@ azA
 azA
 azA
 azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+bIm
+bIm
+xDM
+ljc
+xGw
+mLD
+icV
+crW
+bIm
+bIm
+bIm
+bIm
+kxP
+aKM
+aKM
+bIm
 azA
 azA
 aBo
-aFs
 aBo
-azA
-azA
+aBo
+ake
+aBo
+aBo
+aBo
 azA
 azA
 azA
@@ -86938,36 +86852,6 @@ azA
 azA
 azA
 azA
-urC
-pOU
-hyr
-ikk
-hUN
-hyr
-hyr
-hUN
-xPT
-hUN
-sZn
-hMF
-hMF
-hMF
-hMF
-hMF
-gHs
-inT
-nsU
-nsU
-nsU
-nsU
-nsU
-nsU
-nsU
-nsU
-tII
-nsU
-nsU
-urC
 azA
 azA
 azA
@@ -86978,11 +86862,41 @@ azA
 azA
 azA
 azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+bIm
+oBp
+dOs
+hzp
+hzp
+hzp
+ube
+bIm
+hGF
+mBn
+hGF
+bIm
+vww
+aKM
+aKM
+bIm
 aBo
+aBo
+aBo
+aBA
+xMB
 ajT
+aBA
+aBA
 aBo
-azA
-azA
 azA
 azA
 azA
@@ -87195,36 +87109,6 @@ azA
 azA
 azA
 azA
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-kAB
-hMF
-tZi
-tZi
-hMF
-gHs
-bWr
-nsU
-nsU
-nsU
-nsU
-nsU
-sxX
-nsU
-sxX
-urC
-nsU
-sxX
-urC
 azA
 azA
 azA
@@ -87235,11 +87119,41 @@ azA
 azA
 azA
 azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+bIm
+qvi
+hzp
+hzp
+hzp
+hzp
+wip
+bIm
+chW
+chW
+chW
+bIm
+rkv
+aKM
+aKM
+bIm
+aBA
+aBA
+aBA
+aBA
+ajR
+ajT
+ajR
+eUI
 aBo
-ndt
-aBo
-azA
-azA
 azA
 azA
 azA
@@ -87462,26 +87376,6 @@ azA
 azA
 azA
 azA
-urC
-pFP
-qrC
-wLQ
-eSG
-hMF
-gHs
-fME
-viC
-hiu
-pCp
-xCn
-urC
-urC
-tII
-urC
-urC
-urC
-urC
-urC
 azA
 azA
 azA
@@ -87492,11 +87386,31 @@ azA
 azA
 azA
 azA
+bIm
+aXE
+hzp
+hzp
+twW
+hzp
+ube
+swo
+aVs
+aVs
+aVs
+urr
+rkv
+obI
+fSL
+fFD
+lFN
+akt
+lFN
+lFN
+lFN
+cwF
+ajR
+vRf
 aBo
-ajT
-aBo
-azA
-azA
 azA
 azA
 azA
@@ -87709,36 +87623,6 @@ azA
 azA
 azA
 azA
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-azA
-urC
-kEI
-kEI
-kEI
-kEI
-mmw
-urC
-jee
-jee
-jee
-jee
-jee
-urC
-nsU
-nsU
-nsU
-nsU
-nsU
-nsU
-urC
 azA
 azA
 azA
@@ -87749,11 +87633,41 @@ azA
 azA
 azA
 azA
-aBo
-ajT
-aBo
 azA
 azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+bIm
+qvi
+hzp
+hzp
+hzp
+hzp
+wip
+bIm
+lMF
+lMF
+lMF
+bIm
+rkv
+xEi
+jJj
+bIm
+aBA
+fEW
+aBA
+aBA
+ajR
+aBH
+ajR
+aBA
+xtk
 azA
 azA
 azA
@@ -87966,36 +87880,6 @@ azA
 azA
 azA
 azA
-urC
-jlN
-dZj
-urC
-sbY
-ljb
-tWa
-sbY
-urC
-azA
-urC
-evd
-bHN
-lUD
-qKS
-hyr
-hIZ
-ggG
-qvG
-rYx
-nNn
-idc
-urC
-wHv
-nsU
-nsU
-nsU
-nsU
-nsU
-urC
 azA
 azA
 azA
@@ -88006,11 +87890,41 @@ azA
 azA
 azA
 azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+bIm
+eXV
+hRZ
+hzp
+hzp
+hzp
+mOX
+bIm
+xDp
+fte
+xDp
+bIm
+jNc
+aKM
+aKM
+bIm
 aBo
-wpa
 aBo
-azA
-azA
+aBo
+aBA
+aBA
+aBH
+aBA
+aBA
+aBo
 azA
 azA
 azA
@@ -88223,36 +88137,6 @@ azA
 azA
 azA
 azA
-urC
-icg
-iJy
-xPT
-ljb
-ljb
-aXV
-mLp
-urC
-azA
-urC
-hyr
-hyr
-hyr
-hyr
-hyr
-kEI
-sYr
-uhy
-qvG
-uhy
-bIx
-urC
-muh
-fwQ
-hVJ
-nOq
-jkJ
-dfj
-urC
 azA
 azA
 azA
@@ -88261,13 +88145,43 @@ azA
 azA
 azA
 azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+bIm
+bIm
+ffJ
+gxR
+mwm
+gxR
+qro
+bIm
+bIm
+nNV
+bIm
+bIm
+rcy
+aKM
+aKM
+bIm
 azA
 azA
 aBo
-ajT
 aBo
-azA
-azA
+aBo
+qKq
+aBo
+aBo
+aBo
 azA
 azA
 azA
@@ -88480,42 +88394,42 @@ azA
 azA
 azA
 azA
-urC
-urC
-urC
-urC
-bTK
-ljb
-ljb
-ljb
-urC
-azA
-urC
-kls
-fSH
-fSH
-hyr
-qow
-kEI
-wRH
-qvG
-giK
-qvG
-nNn
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
 azA
 azA
 azA
 azA
 azA
 azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+bIm
+bIm
+bIm
+bIm
+bIm
+bIm
+bIm
+xjn
+hAR
+kvY
+bIm
+rcy
+aKM
+aKM
+bIm
 azA
 azA
 azA
@@ -88737,30 +88651,6 @@ azA
 azA
 azA
 azA
-urC
-vxS
-eXf
-urC
-kEI
-kEI
-kEI
-ikk
-urC
-urC
-urC
-fSH
-fSH
-fSH
-hyr
-iRf
-kEI
-qEa
-uhy
-mrs
-uhy
-hNz
-lRm
-urC
 azA
 azA
 azA
@@ -88772,7 +88662,31 @@ azA
 azA
 azA
 azA
-kPM
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+bIm
+nOJ
+sJk
+aKM
+jQs
+aKM
+brk
+aKM
+bIm
 kPM
 kPM
 kPM
@@ -88994,30 +88908,6 @@ azA
 azA
 azA
 azA
-urC
-cBj
-hyr
-ikk
-hyr
-hyr
-hyr
-hyr
-xPT
-hUN
-cFC
-hyr
-hyr
-hyr
-hyr
-iRY
-kEI
-nQM
-qvG
-uhy
-qvG
-uhy
-rPm
-urC
 azA
 azA
 azA
@@ -89029,7 +88919,31 @@ azA
 azA
 azA
 azA
-kPM
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+bIm
+sPh
+kdN
+hkp
+bIm
+bIm
+bIm
+bIm
+bIm
 uvX
 rqI
 kPM
@@ -89251,38 +89165,38 @@ azA
 azA
 azA
 azA
-urC
-pOU
-hUN
-urC
-oBE
-oFR
-mZS
-hUN
-urC
-urC
-urC
-lEX
-nbD
-hPI
-hLU
-vzD
-kEI
-wZG
-rmS
-wNk
-cRs
-mov
-nRz
-urC
 azA
 azA
 azA
 azA
 azA
 azA
-kPM
-kPM
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+bIm
+bIm
+bIm
+bIm
+bIm
 kPM
 kPM
 kPM
@@ -89508,30 +89422,30 @@ azA
 azA
 azA
 azA
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
 azA
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
-urC
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
+azA
 azA
 azA
 azA

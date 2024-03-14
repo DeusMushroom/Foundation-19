@@ -960,7 +960,7 @@
 	},
 /obj/machinery/camera/autoname{
 	dir = 8;
-	network = list("Entrance                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                Network")
+	network = list("Entrance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Network")
 	},
 /obj/machinery/door/blast/regular{
 	begins_closed = 0;
@@ -1739,7 +1739,7 @@
 /obj/structure/cable/green,
 /obj/machinery/camera/autoname{
 	dir = 1;
-	network = list("Entrance                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                Network")
+	network = list("Entrance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Network")
 	},
 /obj/machinery/light,
 /obj/structure/filingcabinet,
@@ -4406,7 +4406,7 @@
 "lx" = (
 /obj/machinery/camera/autoname{
 	dir = 1;
-	network = list("Entrance                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                Network")
+	network = list("Entrance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Network")
 	},
 /turf/simulated/floor/plating,
 /area/site53/entrancezone/substation)
@@ -4507,7 +4507,7 @@
 	name = "Exterior Lockdown Blast Door"
 	},
 /obj/machinery/door/blast/regular/open{
-	dir = 4;
+	dir = 2;
 	icon_state = "pdoor0";
 	id_tag = "entrance lock";
 	name = "Security Check Point Gate"
@@ -4650,7 +4650,7 @@
 "mJ" = (
 /obj/machinery/camera/autoname{
 	dir = 8;
-	network = list("Entrance                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                Network")
+	network = list("Entrance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Network")
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/site53/uez/repoffice/ethics)
@@ -5166,7 +5166,7 @@
 	name = "Exterior Lockdown Blast Door"
 	},
 /obj/machinery/door/blast/regular/open{
-	dir = 4;
+	dir = 2;
 	icon_state = "pdoor0";
 	id_tag = "entrance lock";
 	name = "Security Check Point Gate"
@@ -5602,7 +5602,7 @@
 "rE" = (
 /obj/machinery/camera/autoname{
 	dir = 1;
-	network = list("Entrance                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                Network")
+	network = list("Entrance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Network")
 	},
 /obj/structure/filingcabinet/chestdrawer,
 /turf/simulated/floor/tiled/monotile,
@@ -6428,7 +6428,7 @@
 "vO" = (
 /obj/machinery/camera/autoname{
 	dir = 4;
-	network = list("Entrance                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                Network")
+	network = list("Entrance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Network")
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/surface/surface)
@@ -6977,7 +6977,7 @@
 /area/site53/lowertrams/restaurantkitchenarea)
 "Ai" = (
 /obj/machinery/camera/autoname{
-	network = list("Entrance                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                Network")
+	network = list("Entrance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Network")
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/surface/surface)
@@ -7014,7 +7014,7 @@
 /area/site53/uez/goirepoffice)
 "AI" = (
 /obj/machinery/camera/autoname{
-	network = list("Entrance                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                Network")
+	network = list("Entrance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Network")
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/site53/surface/cryogenicsprimary)
@@ -8160,7 +8160,7 @@
 /obj/machinery/camera/autoname{
 	c_tag = "Cryo";
 	dir = 8;
-	network = list("Entrance                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                Network                                                                                                                                                                                                                                                                1")
+	network = list("Entrance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Network                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                1")
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -8468,7 +8468,7 @@
 	dir = 8
 	},
 /obj/machinery/camera/autoname{
-	network = list("Entrance                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                Network")
+	network = list("Entrance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Network")
 	},
 /turf/simulated/floor/exoplanet/snow,
 /area/site53/surface/surface)
@@ -9070,7 +9070,7 @@
 	icon_state = "railing0-1"
 	},
 /obj/machinery/camera/autoname{
-	network = list("Entrance                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                Network")
+	network = list("Entrance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Zone                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Network")
 	},
 /turf/simulated/floor/exoplanet/grass,
 /area/site53/surface/surface)
