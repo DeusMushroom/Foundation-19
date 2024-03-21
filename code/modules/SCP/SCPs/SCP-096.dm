@@ -132,7 +132,6 @@
 		to_chat(src, SPAN_WARNING("\The [A] is too far away."))
 		return
 
-
 	var/open_time = 0.5 SECOND
 	if(istype(A, /obj/machinery/door/blast))
 		open_time = 2.5 SECONDS
@@ -300,10 +299,8 @@
 		if(istype(A, /obj/machinery/door))
 			OpenDoor(A)
 			return
-		else if (istype(A, /turf/simulated/wall))
-			A.melt()
 		else
-			A.attack_generic(src, 5000000, "smashes")
+			A.attack_generic(src, rand(120,350), "smashes")
 	else if(ismob(A) && (A != target))
 		visible_message(SPAN_DANGER("[src] rips [A] apart trying to get at [target]!"))
 		var/mob/obstacle = A

@@ -39,7 +39,7 @@ var/global/photo_count = 0
 	var/photo_size = 3
 	///Photo data containing weakrefs to mobs and objects within the photo.
 	var/list/weakref/meta_data
-
+	var/mob/living/scp096/shy_guy_on_photo
 
 /obj/item/photo/New()
 	id = photo_count++
@@ -79,6 +79,9 @@ var/global/photo_count = 0
 	if(!img)
 		return
 	if(distance <= 1)
+		if(shy_guy_on_photo)
+			to_chat(user, SPAN_DANGER("It was a terrible idea..."))
+			shy_guy_on_photo.trigger(user)
 		show(user)
 		to_chat(user, desc)
 	else
@@ -319,15 +322,3 @@ var/global/photo_count = 0
 		p.id = id
 
 	return p
-
-/obj/item/photo/scp096/scp096_photo
-	name =  "???? photo"
-
-/obj/item/photo/scp096/scp096_photo/examine(mob/user, distance)
-	. = ..()
-	var/mob/living/scp096/scp_to_trigger = locate(/mob/living/scp096) in GLOB.SCP_list
-	if(distance <= 1)
-		scp_to_trigger.trigger(user)
-		to_chat(user, SPAN_DANGER("You catch [scp_to_trigger]"))
-	else
-		to_chat(user, SPAN_NOTICE("It is too far away."))
