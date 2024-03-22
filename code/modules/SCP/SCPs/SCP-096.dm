@@ -302,7 +302,7 @@
 		else if (istype(A, /turf/simulated/wall))
 			A.melt()
 		else
-			A.attack_generic(src, 5000000, "smashes")
+			A.attack_generic(src, rand(120,350), "smashes")
 	else if(ismob(A) && (A != target))
 		visible_message(SPAN_DANGER("[src] rips [A] apart trying to get at [target]!"))
 		var/mob/obstacle = A
