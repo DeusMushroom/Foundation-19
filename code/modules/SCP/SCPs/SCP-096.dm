@@ -299,6 +299,8 @@
 		if(istype(A, /obj/machinery/door))
 			OpenDoor(A)
 			return
+		else if (istype(A, /turf/simulated/wall))
+			A.melt()
 		else
 			A.attack_generic(src, rand(120,350), "smashes")
 	else if(ismob(A) && (A != target))
