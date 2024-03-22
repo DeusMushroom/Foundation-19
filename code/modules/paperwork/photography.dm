@@ -39,7 +39,6 @@ var/global/photo_count = 0
 	var/photo_size = 3
 	///Photo data containing weakrefs to mobs and objects within the photo.
 	var/list/weakref/meta_data
-	var/mob/living/scp096/shy_guy_on_photo
 
 /obj/item/photo/New()
 	id = photo_count++
@@ -79,9 +78,6 @@ var/global/photo_count = 0
 	if(!img)
 		return
 	if(distance <= 1)
-		if(shy_guy_on_photo)
-			to_chat(user, SPAN_DANGER("It was a terrible idea..."))
-			shy_guy_on_photo.trigger(user)
 		show(user)
 		to_chat(user, desc)
 	else
@@ -212,7 +208,6 @@ var/global/photo_count = 0
 
 /obj/item/device/camera/proc/get_mobs(turf/the_turf as turf)
 	var/mob_detail
-	var/mob/living/scp096/shy_guy_on_photo
 	for(var/atom/our_atom in the_turf)
 		if(our_atom.invisibility) continue
 		if(iscarbon(our_atom))
@@ -230,9 +225,6 @@ var/global/photo_count = 0
 				mob_detail = "You can see [A] on the photo[(A.health / A.maxHealth) < 0.75 ? " - [A] looks hurt":""].[holding ? " [holding]":"."]. "
 			else
 				mob_detail += "You can also see [A] on the photo[(A.health / A.maxHealth)< 0.75 ? " - [A] looks hurt":""].[holding ? " [holding]":"."]."
-
-		else if (istype(our_atom, /mob/living/scp096))
-			shy_guy_on_photo = our_atom
 
 		else if(our_atom.SCP)
 			if (!mob_detail)
@@ -322,3 +314,15 @@ var/global/photo_count = 0
 		p.id = id
 
 	return p
+
+/obj/item/photo/scp096/scp096_photo
+	name =  "???? photo"
+
+/obj/item/photo/scp096/scp096_photo/examine(mob/user, distance)
+	. = ..()
+	var/mob/living/scp096/scp_to_trigger = locate(/mob/living/scp096) in GLOB.SCP_list
+	if(distance <= 1)
+		scp_to_trigger.trigger(user)
+		to_chat(user, SPAN_DANGER("You catch [scp_to_trigger]"))
+	else
+		to_chat(user, SPAN_NOTICE("It is too far away."))
