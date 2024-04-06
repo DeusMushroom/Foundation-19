@@ -475,6 +475,8 @@ var/list/admin_verbs_mentors = list(
 	return
 
 /client/proc/unban_panel()
+	set name = "Unban Panel"
+	set category = "Admin"
 	if(check_rights(R_BAN))
 		if(config.ban_legacy_system)
 			holder.unbanpanel()
