@@ -501,8 +501,8 @@ var/global/floorIsLava = 0
 		world.Reboot()
 
 
-/datum/admins/proc/announce()
-	set category = "Special Verbs"
+/* /datum/admins/proc/announce()
+	set category = "Admin"
 	set name = "Announce"
 	set desc="Announce your desires to the world"
 	if(!check_rights(0))	return
@@ -513,7 +513,7 @@ var/global/floorIsLava = 0
 		message = replacetext(message, "\n", "<br>") // required since we're putting it in a <p> tag
 		to_world("<span class=notice><b>[usr.key] Announces:</b><p style='text-indent: 50px'>[message]</p></span>")
 		log_admin("Announce: [key_name(usr)] : [message]")
-	SSstatistics.add_field_details("admin_verb","A") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+	SSstatistics.add_field_details("admin_verb","A") /If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc! */
 
 /datum/admins/proc/toggleooc()
 	set category = "Server"
@@ -1211,7 +1211,7 @@ var/global/floorIsLava = 0
 	return 1
 
 /datum/admins/proc/force_antag_latespawn()
-	set category = "Admin"
+	set category = "Debug"
 	set name = "Force Template Spawn"
 	set desc = "Force an antagonist template to spawn."
 
@@ -1236,7 +1236,7 @@ var/global/floorIsLava = 0
 	antag.attempt_auto_spawn()
 
 /datum/admins/proc/force_mode_latespawn()
-	set category = "Admin"
+	set category = "Fun"
 	set name = "Force Mode Spawn"
 	set desc = "Force autotraitor to proc."
 
@@ -1280,7 +1280,7 @@ var/global/floorIsLava = 0
 
 
 /datum/admins/proc/sendFax()
-	set category = "Special Verbs"
+	set category = "Fun"
 	set name = "Send Fax"
 	set desc = "Sends a fax to this machine"
 
@@ -1318,7 +1318,7 @@ var/global/floorIsLava = 0
 
 
 /client/proc/check_fax_history()
-	set category = "Special Verbs"
+	set category = "Fun"
 	set name = "Check Fax History"
 	set desc = "Look up the faxes sent this round."
 
@@ -1329,7 +1329,7 @@ var/global/floorIsLava = 0
 			data += "[item.name] - <a href='?_src_=holder;AdminFaxView=\ref[item]'>view message</a><br>"
 	else
 		data += "<center>No faxes yet.</center>"
-	show_browser(usr, "<HTML><HEAD><TITLE>Fax History</TITLE></HEAD><BODY>[data]</BODY></HTML>", "window=FaxHistory;size=450x400")
+	show_browser(usr, "<HTML><HEAD><TITLE>Fax History</TITLE><meta http-equiv='X-UA-Compatible' content='IE=edge' charset='UTF-8'/></HEAD><BODY>[data]</BODY></HTML>", "window=FaxHistory;size=450x400")
 
 /datum/admins/var/obj/item/paper/admin/faxreply // var to hold fax replies in
 
