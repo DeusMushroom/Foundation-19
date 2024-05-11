@@ -1,3 +1,7 @@
-#include "_maps.dm"
+#ifndef MODPACK_CELADON_MAPS
+#define MODPACK_CELADON_MAPS
 
-#include "site53/site53.dm"
+#include "_maps.dm"
+#include "code/includes.dm"
+
+#endif

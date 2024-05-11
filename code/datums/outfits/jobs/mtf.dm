@@ -10,11 +10,15 @@
 /decl/hierarchy/outfit/mtf/epsilon_11
 	hierarchy_type = /decl/hierarchy/outfit/mtf/epsilon_11
 
-/* /decl/hierarchy/outfit/mtf/epsilon_11/agent
+/decl/hierarchy/outfit/mtf/epsilon_11/agent
 	name = OUTFIT_JOB_NAME("MTF Epsilon-11 Agent")
 	uniform = /obj/item/clothing/under/ert/epsilon11
-	suit = /obj/item/clothing/suit/armor/pcarrier/green/scp/mtf_epsilon
-	head = /obj/item/clothing/head/helmet/ballistic
+	// [CELADON-EDIT] - CELADON_OUTFITS
+	// suit = /obj/item/clothing/suit/armor/pcarrier/green/scp/mtf_epsilon // CELADON-EDIT - ORIGINAL
+	// head = /obj/item/clothing/head/helmet/ballistic // CELADON-EDIT - ORIGINAL
+	suit = /obj/item/clothing/suit/armor/vest/scp/medarmor/MTFlight
+	head = /obj/item/clothing/head/helmet/scp/lwh_helmet
+	// [/CELADON-EDIT]
 	mask = /obj/item/clothing/mask/balaclava/tactical
 	glasses = /obj/item/clothing/glasses/night
 	gloves = /obj/item/clothing/gloves/tactical/scp
@@ -31,8 +35,12 @@
 /decl/hierarchy/outfit/mtf/epsilon_11/breacher
 	name = OUTFIT_JOB_NAME("MTF Epsilon-11 Breacher")
 	uniform = /obj/item/clothing/under/ert/epsilon11
-	suit = /obj/item/clothing/suit/armor/pcarrier/green/scp/mtf_epsilon
-	head = /obj/item/clothing/head/helmet/ballistic
+	// [CELADON-EDIT] - CELADON_OUTFITS
+	// suit = /obj/item/clothing/suit/armor/pcarrier/green/scp/mtf_epsilon // CELADON-EDIT - ORIGINAL
+	// head = /obj/item/clothing/head/helmet/ballistic // CELADON-EDIT - ORIGINAL
+	suit = /obj/item/clothing/suit/armor/vest/scp/medarmor/MTFmedium
+	head = /obj/item/clothing/head/helmet/scp/lwh_helmet
+	// [/CELADON-EDIT]
 	mask = /obj/item/clothing/mask/balaclava/tactical
 	glasses = /obj/item/clothing/glasses/night
 	gloves = /obj/item/clothing/gloves/tactical/scp
@@ -49,8 +57,12 @@
 /decl/hierarchy/outfit/mtf/epsilon_11/leader
 	name = OUTFIT_JOB_NAME("MTF Epsilon-11 Team Leader")
 	uniform = /obj/item/clothing/under/ert/epsilon11
-	suit = /obj/item/clothing/suit/armor/pcarrier/green/scp/mtf_epsilon
-	head = /obj/item/clothing/head/beret/mtf
+	// [CELADON-EDIT] - CELADON_OUTFITS
+	// suit = /obj/item/clothing/suit/armor/pcarrier/green/scp/mtf_epsilon // CELADON-EDIT - ORIGINAL
+	// head = /obj/item/clothing/head/beret/mtf // CELADON-EDIT - ORIGINAL
+	suit = /obj/item/clothing/suit/armor/vest/scp/medarmor/MTFlight
+	head = /obj/item/clothing/head/helmet/scp/lwh_helmet
+	// [/CELADON-EDIT]
 	mask = /obj/item/clothing/mask/balaclava
 	glasses = /obj/item/clothing/glasses/night
 	gloves = /obj/item/clothing/gloves/tactical/scp
@@ -80,7 +92,7 @@
 	r_pocket = null
 	id_type = /obj/item/card/id/mtf/ninetail
 	belt = /obj/item/defibrillator/compact/combat/loaded
-	backpack_contents = list(/obj/item/ammo_magazine/scp/p90_mag/ap = 3,/obj/item/clothing/mask/gas = 1,/obj/item/reagent_containers/ivbag/blood/OMinus = 2,/obj/item/storage/pill_bottle/zoom = 1) */
+	backpack_contents = list(/obj/item/ammo_magazine/scp/p90_mag/ap = 3,/obj/item/clothing/mask/gas = 1,/obj/item/reagent_containers/ivbag/blood/OMinus = 2,/obj/item/storage/pill_bottle/zoom = 1)
 
 /decl/hierarchy/outfit/mtf/eta_10 // See No Evil
 	name = OUTFIT_JOB_NAME("MTF Eta-10 Operative")

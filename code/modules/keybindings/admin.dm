@@ -34,15 +34,22 @@
 	user.holder?.player_panel_new()
 	return TRUE
 
-// /datum/keybinding/admin/admin_pm			# Celadon Changes => mod_celadon\_components\code\keybinds.dm
-// 	hotkey_keys = list("F8")
-// 	name = "admin_pm"
-// 	full_name = "Admin PM"
-// 	description = "Sends Admin PM message"
+/datum/keybinding/admin/admin_pm
+	hotkey_keys = list("F8")
+	// [CELADON-EDIT] - CELADON_COMPONENTS
+	/* // CELADON-EDIT - ORIGINAL
+	name = "admin_pm"
+	full_name = "Admin PM"
+	description = "Sends Admin PM message"
+	*/
+	name = "build_mod"
+	full_name = "Build Mod"
+	description = "Change Build Mod"
+	// [/CELADON-EDIT]
 
-// /datum/keybinding/admin/admin_pm/down(client/user)
-// 	user.togglebuildmodeself()
-// 	return TRUE
+/datum/keybinding/admin/admin_pm/down(client/user)
+	user.togglebuildmodeself()
+	return TRUE
 
 /datum/keybinding/admin/invisimin
 	hotkey_keys = list("F9")

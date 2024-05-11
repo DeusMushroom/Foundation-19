@@ -1,0 +1,8 @@
+#ifndef MODPACK_SCI_JOB_NAMES
+#define MODPACK_SCI_JOB_NAMES
+
+#include "_sci_job_names.dm"
+
+#include "code/job/research.dm"
+
+#endif

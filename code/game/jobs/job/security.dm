@@ -210,7 +210,7 @@
 // OFFICERS
 //##
 
-/* /datum/job/ncoofficerlcz			=# Mod Celadon Changes => mod_celadon\outfits\code\job\security.dm #=
+/datum/job/ncoofficerlcz
 	title = "LCZ Sergeant"
 	department = "Light Containment Personnel"
 	selection_color = "#601c1c"
@@ -233,6 +233,9 @@
 		ACCESS_SEC_COMMS,
 		ACCESS_SECURITY_LVL1,
 		ACCESS_SECURITY_LVL2,
+		// [CELADON-ADD] - CELADON_OUTFITS
+		ACCESS_SECURITY_LVL3,
+		// [/CELADON-ADD]
 		ACCESS_SCIENCE_LVL1,
 		ACCESS_SCIENCE_LVL2,
 		ACCESS_DCLASS_KITCHEN,
@@ -256,7 +259,7 @@
 	    SKILL_WEAPONS     = SKILL_EXPERIENCED,
 	    SKILL_FORENSICS   = SKILL_TRAINED
 	)
-	skill_points = 21 */
+	skill_points = 21
 
 /datum/job/ncoofficerhcz
 	title = "HCZ Sergeant"

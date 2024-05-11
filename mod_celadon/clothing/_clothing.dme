@@ -1,0 +1,7 @@
+#ifndef MODPACK_CELADON_CLOTHING
+#define MODPACK_CELADON_CLOTHING
+
+#include "_clothing.dm"
+#include "code/clothing.dm"
+
+#endif

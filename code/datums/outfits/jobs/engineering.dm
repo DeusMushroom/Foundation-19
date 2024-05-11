@@ -11,22 +11,28 @@
 	l_pocket = /obj/item/device/radio
 	l_ear = /obj/item/device/radio/headset/heads/ce
 
-/* /decl/hierarchy/outfit/job/engineering/conteng			Celadon Changes => mod_celadon/outfits/code/outfits.dm
+/decl/hierarchy/outfit/job/engineering/conteng
 	name = OUTFIT_JOB_NAME("Containment Engineer")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/engineering
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/card/id/seclvl4eng
 	belt = /obj/item/storage/belt/utility/full
 	l_pocket = /obj/item/device/radio
-	l_ear = /obj/item/device/radio/headset/conteng */
+	l_ear = /obj/item/device/radio/headset/conteng
 
 /decl/hierarchy/outfit/job/engineering/seneng
 	name = OUTFIT_JOB_NAME("Senior Engineer")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/engineering
 	shoes = /obj/item/clothing/shoes/dutyboots
-	id_type = /obj/item/card/id/seclvl4eng
+	// [CELADON-EDIT] - CELADON_OUTFITS
+	// id_type = /obj/item/card/id/seclvl4eng // CELADON-EDIT - ORIGINAL
+	id_type = /obj/item/card/id/seclvl4conteng
+	// [/CELADON-EDIT]
 	belt = /obj/item/storage/belt/utility/full
 	l_pocket = /obj/item/device/radio
+	// [CELADON-ADD] - CELADON_OUTFITS
+	r_ear = /obj/item/device/radio/headset/conteng/alt
+	// [/CELADON-ADD]
 	l_ear = /obj/item/device/radio/headset/heads/ce
 
 /decl/hierarchy/outfit/job/engineering/juneng

@@ -1,0 +1,8 @@
+#ifndef MODPACK_CELADON__MASTER_FILES
+#define MODPACK_CELADON__MASTER_FILES
+
+#include "__master_files.dm"
+
+#include "code\datums\security_state.dm"
+
+#endif

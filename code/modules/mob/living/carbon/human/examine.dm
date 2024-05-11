@@ -117,7 +117,13 @@
 
 	//ID
 	if(wear_id)
-		msg += "[p_they(TRUE)] [p_are()] wearing [wear_id.get_examine_line(user)].\n"
+		// [CELADON-ADD] - CELADON_HUMAN_EXAMINE
+		var/obj/item/card/id/id = GetIdCard()
+		// [/CELADON-ADD]
+		// [CELADON-EDIT] - CELADON_HUMAN_EXAMINE
+		// msg += "[p_they(TRUE)] [p_are()] wearing [wear_id.get_examine_line(user)].\n" // CELADON-EDIT - ORIGINAL
+		msg += "[p_they(TRUE)] [p_are()] wearing [wear_id.get_examine_line(user)]. Job: [id.assignment]. CLASS: [id.class].\n "
+		// [/CELADON-EDIT]
 
 	//handcuffed?
 	if(handcuffed)

@@ -218,15 +218,23 @@ var/list/global/organ_rel_size = list(
 	if(re_encode)
 		. = html_encode(.)
 
-/* /proc/slur(phrase)
+/proc/slur(phrase)
 	phrase = html_decode(phrase)
-	var/leng=length(phrase)
-	var/counter=length(phrase)
+	// [CELADON-EDIT] - CELADON_COMPONENTS
+	// var/leng=length(phrase) // CELADON-EDIT - ORIGINAL
+	// var/counter=length(phrase) // CELADON-EDIT - ORIGINAL
+	var/leng=length_char(phrase)
+	var/counter=length_char(phrase)
+	// [/CELADON-EDIT]
 	var/newphrase=""
 	var/newletter=""
 	while(counter>=1)
-		newletter=copytext(phrase,(leng-counter)+1,(leng-counter)+2)
-		if(prob(30))
+		// [CELADON-EDIT] - CELADON_COMPONENTS
+		// newletter=copytext(phrase,(leng-counter)+1,(leng-counter)+2) // CELADON-EDIT - ORIGINAL
+		// if(prob(30)) // CELADON-EDIT - ORIGINAL
+		newletter=copytext_char(phrase,(leng-counter)+1,(leng-counter)+2)
+		if(rand(1,3)==3)
+		// [/CELADON-EDIT]
 			if(lowertext(newletter)=="o")
 				newletter="u"
 			if(lowertext(newletter)=="s")
@@ -235,12 +243,36 @@ var/list/global/organ_rel_size = list(
 				newletter="ah"
 			if(lowertext(newletter)=="c")
 				newletter="k"
-		switch(rand(1,9))
-			if(1,2,3,4)
+				// [CELADON-ADD] - CELADON_COMPONENTS
+				newletter="ah"
+				// [/CELADON-ADD]
+			// [CELADON-ADD] - CELADON_COMPONENTS
+			if(lowertext(newletter)=="c")
+				newletter="k"
+			// [/CELADON-ADD]
+			// [CELADON-ADD] - CELADON_COMPONENTS
+			if(lowertext(newletter)=="о")  newletter="у"
+			if(lowertext(newletter)=="с")  newletter="з"
+			if(lowertext(newletter)=="а")  newletter="ах"
+			if(lowertext(newletter)=="с")  newletter="к"
+			if(lowertext(newletter)=="ч")  newletter="з"
+			// [/CELADON-ADD]
+		// [CELADON-EDIT] - CELADON_COMPONENTS
+		// switch(rand(1,9)) // CELADON-EDIT - ORIGINAL
+			// if(1,2,3,4) // CELADON-EDIT - ORIGINAL
+		switch(rand(1,7))
+			if(1,3,5)
+			// [/CELADON-EDIT]
 				newletter="[lowertext(newletter)]"
-			if(5,6,7,8)
+			// [CELADON-EDIT] - CELADON_COMPONENTS
+			// if(5,6,7,8) // CELADON-EDIT - ORIGINAL
+			if(2,4,6)
+			// [/CELADON-EDIT]
 				newletter="[uppertext(newletter)]"
-			if(9)
+			// [CELADON-EDIT] - CELADON_COMPONENTS
+			// if(9) // CELADON-EDIT - ORIGINAL
+			if(7)
+			// [/CELADON-EDIT]
 				newletter+="'"
 			//if(9,10)	newletter="<b>[newletter]</b>"
 			//if(11,12)	newletter="<big>[newletter]</big>"
@@ -251,12 +283,23 @@ var/list/global/organ_rel_size = list(
 /proc/stutter(n)
 	var/te = html_decode(n)
 	var/t = ""//placed before the message. Not really sure what it's for.
-	n = length(n)//length of the entire word
+	// [CELADON-EDIT] - CELADON_COMPONENTS
+	// n = length(n)//length of the entire word // CELADON-EDIT - ORIGINAL
+	n = length_char(n)//length of the entire word
+	// [/CELADON-EDIT]
 	var/p = null
 	p = 1//1 is the start of any word
 	while(p <= n)//while P, which starts at 1 is less or equal to N which is the length.
 		var/n_letter = copytext(te, p, p + 1)//copies text from a certain distance. In this case, only one letter at a time.
-		if (prob(80) && (ckey(n_letter) in list("b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z")))
+		// [CELADON-ADD] - CELADON_COMPONENTS
+		var/list/letters_list = list(
+			"b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z",
+			"б","с","д","ф","г","ч","ж","к","л","т","н","р","т","в","х","у","з")
+		// [/CELADON-ADD]
+		// [CELADON-EDIT] - CELADON_COMPONENTS
+		// if (prob(80) && (ckey(n_letter) in list("b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"))) // CELADON-EDIT - ORIGINAL
+		if (prob(80) && (ckey(n_letter) in letters_list))
+		// [/CELADON-EDIT]
 			if (prob(10))
 				n_letter = text("[n_letter]-[n_letter]-[n_letter]-[n_letter]")//replaces the current letter with this instead.
 			else
@@ -269,7 +312,7 @@ var/list/global/organ_rel_size = list(
 						n_letter = text("[n_letter]-[n_letter]")
 		t = text("[t][n_letter]")//since the above is ran through for each letter, the text just adds up back to the original word.
 		p++//for each letter p is increased to find where the next letter will be.
-	return sanitize(t)		*/
+	return sanitize(t)
 
 
 /proc/Gibberish(t, p)//t is the inputted message, and any value higher than 70 for p will cause letters to be replaced instead of added
