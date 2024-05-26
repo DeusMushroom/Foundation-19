@@ -2,7 +2,7 @@
 
 #### Список PRов:
 
-- https://github.com/CeladonSS13/Foundation-19/tree/beta-dev/#####
+- https://github.com/CeladonSS13/Foundation-19/pulls
 <!--
   Ссылки на PRы, связанные с модом:
   - Создание
